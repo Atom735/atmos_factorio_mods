@@ -1,3 +1,5 @@
+local mod_gui = require("mod-gui")
+
 local SHORTCUT_NAME = "atmos-auto-fire-toggle"
 local BUTTON_NAME = "atmos_auto_fire_settings"
 local FRAME_NAME = "atmos_auto_fire_frame"
@@ -6,6 +8,7 @@ local IGNORE_CHECK = "atmos_auto_fire_ignore_friendly"
 local DEBUG_CHECK = "atmos_auto_fire_debug"
 local ALLOW_HOLDER = "atmos_auto_fire_allow_holder"
 local FORBID_HOLDER = "atmos_auto_fire_forbid_holder"
+local WEAPONS_HOLDER = "atmos_auto_fire_weapons_holder"
 
 local SCAN_INTERVAL = 5
 local FOOT_CLEARANCE_SQ = 0.49
@@ -266,6 +269,10 @@ local function ensure_config(player_index)
   config.panic_radius = nil
   config.priorities = nil
 
+  if type(config.weapons) ~= "table" then
+    config.weapons = {}
+  end
+
   config.allow = sanitize_list(config.allow, sanitize_allow_entry, default_allow, false)
   config.forbid = sanitize_list(config.forbid, sanitize_forbid_entry, default_forbid, true)
   return config
@@ -311,7 +318,7 @@ end
 
 local function sync_visuals(player, config)
   player.set_shortcut_toggled(SHORTCUT_NAME, config.enabled)
-  local button = player.gui.top[BUTTON_NAME]
+  local button = mod_gui.get_button_flow(player)[BUTTON_NAME]
   if button then
     button.toggled = config.enabled
   end
@@ -324,7 +331,29 @@ local function sync_visuals(player, config)
   end
 end
 
-local function combat_context(player)
+local function list_guns()
+  local guns = {}
+  for name, proto in pairs(prototypes.get_item_filtered({ { filter = "type", type = "gun" } })) do
+    if not proto.hidden and not proto.parameter then
+      guns[#guns + 1] = name
+    end
+  end
+  table.sort(guns, function(a, b)
+    local oa, ob = prototypes.item[a].order or "", prototypes.item[b].order or ""
+    if oa ~= ob then
+      return oa < ob
+    end
+    return a < b
+  end)
+  return guns
+end
+
+-- Weapons are on unless the player switched them off, so guns from newly added mods fire by default.
+local function weapon_enabled(config, gun_name)
+  return config.weapons[gun_name] ~= false
+end
+
+local function combat_context(player, config)
   if not player or not player.valid then
     return nil
   end
@@ -348,7 +377,7 @@ local function combat_context(player)
   if not gun or not gun.valid_for_read then
     return nil
   end
-  if not string.find(gun.name, "shotgun", 1, true) then
+  if not weapon_enabled(config or ensure_config(player.index), gun.name) then
     return nil
   end
   return {
@@ -386,7 +415,7 @@ local function weapon_stats(force, gun_stack, ammo_stack)
     category = params.ammo_categories[1]
   end
   if not category then
-    category = "shotgun-shell"
+    category = "bullet"
   end
 
   local speed = 0
@@ -951,6 +980,39 @@ local function rebuild_forbid_list(player)
   end
 end
 
+local function rebuild_weapons_list(player)
+  local config = ensure_config(player.index)
+  local frame = player.gui.screen[FRAME_NAME]
+  if not frame then
+    return
+  end
+  local holder = find_gui(frame, WEAPONS_HOLDER)
+  if not holder then
+    return
+  end
+  holder.clear()
+  local table_gui = holder.add({ type = "table", column_count = 2 })
+  for _, name in pairs(list_guns()) do
+    local icon = table_gui.add({ type = "sprite", sprite = "item/" .. name })
+    icon.style.size = 28
+    icon.style.stretch_image_to_widget_size = true
+    table_gui.add({
+      type = "checkbox",
+      caption = prototypes.item[name].localised_name,
+      state = weapon_enabled(config, name),
+      tags = { atmos_auto_fire = "weapon", name = name },
+    })
+  end
+end
+
+local function set_all_weapons(player, state)
+  local config = ensure_config(player.index)
+  for _, name in pairs(list_guns()) do
+    config.weapons[name] = state
+  end
+  rebuild_weapons_list(player)
+end
+
 local function move_allow(player, index, direction)
   local config = ensure_config(player.index)
   local destination = index + direction
@@ -1063,7 +1125,10 @@ local function build_window(player)
     tags = { atmos_auto_fire = "close" },
   })
 
-  local inner = frame.add({
+  local columns = frame.add({ type = "flow", direction = "horizontal" })
+  columns.style.horizontal_spacing = 12
+
+  local inner = columns.add({
     type = "frame",
     style = "inside_shallow_frame_with_padding",
     direction = "vertical",
@@ -1138,8 +1203,34 @@ local function build_window(player)
     tags = { atmos_auto_fire = "forbid-add" },
   })
 
+  local weapons = columns.add({
+    type = "frame",
+    style = "inside_shallow_frame_with_padding",
+    direction = "vertical",
+  })
+  weapons.style.vertically_stretchable = true
+  weapons.add({ type = "label", caption = { "atmos-auto-fire.weapons-title" }, style = "caption_label" })
+  local weapons_hint = weapons.add({ type = "label", caption = { "atmos-auto-fire.weapons-hint" } })
+  weapons_hint.style.maximal_width = 220
+  weapons_hint.style.single_line = false
+  local weapon_buttons = weapons.add({ type = "flow", direction = "horizontal" })
+  weapon_buttons.add({
+    type = "button",
+    caption = { "atmos-auto-fire.weapons-all-on" },
+    tags = { atmos_auto_fire = "weapons-all", state = true },
+  })
+  weapon_buttons.add({
+    type = "button",
+    caption = { "atmos-auto-fire.weapons-all-off" },
+    tags = { atmos_auto_fire = "weapons-all", state = false },
+  })
+  local weapons_scroll = weapons.add({ type = "scroll-pane", direction = "vertical" })
+  weapons_scroll.style.maximal_height = 520
+  weapons_scroll.add({ type = "flow", name = WEAPONS_HOLDER, direction = "vertical" })
+
   rebuild_allow_list(player)
   rebuild_forbid_list(player)
+  rebuild_weapons_list(player)
   player.opened = frame
 end
 
@@ -1159,17 +1250,22 @@ local function toggle_window(player)
 end
 
 local function ensure_top_button(player)
-  if player.gui.top[BUTTON_NAME] then
-    return
+  local legacy = player.gui.top[BUTTON_NAME]
+  if legacy then
+    legacy.destroy()
   end
-  local button = player.gui.top.add({
-    type = "sprite-button",
-    name = BUTTON_NAME,
-    sprite = "item/shotgun",
-    style = "slot_button",
-    tooltip = { "atmos-auto-fire.open-settings" },
-    tags = { atmos_auto_fire = "settings" },
-  })
+  local flow = mod_gui.get_button_flow(player)
+  local button = flow[BUTTON_NAME]
+  if not button then
+    button = flow.add({
+      type = "sprite-button",
+      name = BUTTON_NAME,
+      style = mod_gui.button_style,
+      tooltip = { "atmos-auto-fire.open-settings" },
+      tags = { atmos_auto_fire = "settings" },
+    })
+  end
+  button.sprite = "virtual-signal/atmos-auto-fire-settings-button"
   button.toggled = ensure_config(player.index).enabled
 end
 
@@ -1220,7 +1316,7 @@ local function scan(player)
     disarm(player, runtime)
     return
   end
-  local context = combat_context(player)
+  local context = combat_context(player, config)
   if not context or not has_ammo(context) then
     disarm(player, runtime)
     return
@@ -1402,6 +1498,8 @@ script.on_event(defines.events.on_gui_click, function(event)
   elseif action == "forbid-remove" then
     table.remove(config.forbid, tags.index)
     rebuild_forbid_list(player)
+  elseif action == "weapons-all" then
+    set_all_weapons(player, tags.state == true)
   end
 end)
 
@@ -1486,11 +1584,19 @@ end)
 
 script.on_event(defines.events.on_gui_checked_state_changed, function(event)
   local element = event.element
-  if not (element and element.valid and (element.name == IGNORE_CHECK or element.name == DEBUG_CHECK)) then
+  if not (element and element.valid) then
     return
   end
   local player = game.get_player(event.player_index)
   if not player then
+    return
+  end
+  local tags = element.tags
+  if tags and tags.atmos_auto_fire == "weapon" and tags.name then
+    ensure_config(player.index).weapons[tags.name] = element.state
+    return
+  end
+  if element.name ~= IGNORE_CHECK and element.name ~= DEBUG_CHECK then
     return
   end
   local config = ensure_config(player.index)

@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-11-11
+  Graphics:
+    - New thumbnail in the shared Atmos frame.
+  Gui:
+    - Top-bar button opens the settings panel; its icon is the fish with gear and heart badges.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-11-06
   Features:

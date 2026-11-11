@@ -1,0 +1,3416 @@
+{
+  "source": "Factorio data/*/prototypes (virtual-signal)",
+  "count": 155,
+  "signals": [
+    {
+      "name": "up-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "a[up-arrow]",
+      "icon": "__base__/graphics/icons/arrows/up-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/up-arrow.png",
+      "locale_en": "Up arrow",
+      "locale_ru": "Стрелка вверх",
+      "sprite": "virtual-signal/up-arrow",
+      "rich_text": "[virtual-signal=up-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "up-arrow"
+      },
+      "description": "Up arrow. Direction arrow signal."
+    },
+    {
+      "name": "up-right-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "b[up-right-arrow]",
+      "icon": "__base__/graphics/icons/arrows/up-right-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/up-right-arrow.png",
+      "locale_en": "Up right arrow",
+      "locale_ru": "Стрелка вверх вправо",
+      "sprite": "virtual-signal/up-right-arrow",
+      "rich_text": "[virtual-signal=up-right-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "up-right-arrow"
+      },
+      "description": "Up right arrow. Direction arrow signal."
+    },
+    {
+      "name": "right-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "c[right-arrow]",
+      "icon": "__base__/graphics/icons/arrows/right-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/right-arrow.png",
+      "locale_en": "Right arrow",
+      "locale_ru": "Стрелка вправо",
+      "sprite": "virtual-signal/right-arrow",
+      "rich_text": "[virtual-signal=right-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "right-arrow"
+      },
+      "description": "Right arrow. Direction arrow signal."
+    },
+    {
+      "name": "down-right-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "d[down-right-arrow]",
+      "icon": "__base__/graphics/icons/arrows/down-right-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/down-right-arrow.png",
+      "locale_en": "Down right arrow",
+      "locale_ru": "Стрелка вниз вправо",
+      "sprite": "virtual-signal/down-right-arrow",
+      "rich_text": "[virtual-signal=down-right-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "down-right-arrow"
+      },
+      "description": "Down right arrow. Direction arrow signal."
+    },
+    {
+      "name": "down-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "e[down-arrow]",
+      "icon": "__base__/graphics/icons/arrows/down-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/down-arrow.png",
+      "locale_en": "Down arrow",
+      "locale_ru": "Стрелка вниз",
+      "sprite": "virtual-signal/down-arrow",
+      "rich_text": "[virtual-signal=down-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "down-arrow"
+      },
+      "description": "Down arrow. Direction arrow signal."
+    },
+    {
+      "name": "down-left-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "f[down-left-arrow]",
+      "icon": "__base__/graphics/icons/arrows/down-left-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/down-left-arrow.png",
+      "locale_en": "Down left arrow",
+      "locale_ru": "Стрелка вниз влево",
+      "sprite": "virtual-signal/down-left-arrow",
+      "rich_text": "[virtual-signal=down-left-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "down-left-arrow"
+      },
+      "description": "Down left arrow. Direction arrow signal."
+    },
+    {
+      "name": "left-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "g[left-arrow]",
+      "icon": "__base__/graphics/icons/arrows/left-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/left-arrow.png",
+      "locale_en": "Left arrow",
+      "locale_ru": "Стрелка влево",
+      "sprite": "virtual-signal/left-arrow",
+      "rich_text": "[virtual-signal=left-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "left-arrow"
+      },
+      "description": "Left arrow. Direction arrow signal."
+    },
+    {
+      "name": "up-left-arrow",
+      "mod": "base",
+      "subgroup": "arrows",
+      "order": "h[up-left-arrow]",
+      "icon": "__base__/graphics/icons/arrows/up-left-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/up-left-arrow.png",
+      "locale_en": "Up left arrow",
+      "locale_ru": "Стрелка вверх влево",
+      "sprite": "virtual-signal/up-left-arrow",
+      "rich_text": "[virtual-signal=up-left-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "up-left-arrow"
+      },
+      "description": "Up left arrow. Direction arrow signal."
+    },
+    {
+      "name": "signal-rightwards-leftwards-arrow",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "a[rightwards-leftwards-arrow]",
+      "icon": "__base__/graphics/icons/arrows/signal-rightwards-leftwards-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-rightwards-leftwards-arrow.png",
+      "locale_en": "Rightwards-leftwards arrow",
+      "locale_ru": "Стрелки вправо и влево",
+      "sprite": "virtual-signal/signal-rightwards-leftwards-arrow",
+      "rich_text": "[virtual-signal=signal-rightwards-leftwards-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-rightwards-leftwards-arrow"
+      },
+      "description": "Rightwards-leftwards arrow. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-upwards-downwards-arrow",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "b[upwards-downwards-arrow]",
+      "icon": "__base__/graphics/icons/arrows/signal-upwards-downwards-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-upwards-downwards-arrow.png",
+      "locale_en": "Upwards-downwards arrow",
+      "locale_ru": "Стрелки вверх и вниз",
+      "sprite": "virtual-signal/signal-upwards-downwards-arrow",
+      "rich_text": "[virtual-signal=signal-upwards-downwards-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-upwards-downwards-arrow"
+      },
+      "description": "Upwards-downwards arrow. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-shuffle",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "c[shuffle]",
+      "icon": "__base__/graphics/icons/arrows/signal-shuffle.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-shuffle.png",
+      "locale_en": "Shuffle",
+      "locale_ru": "Перемешивание",
+      "sprite": "virtual-signal/signal-shuffle",
+      "rich_text": "[virtual-signal=signal-shuffle]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-shuffle"
+      },
+      "description": "Shuffle. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-left-right-arrow",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "dleft-right-arrow]",
+      "icon": "__base__/graphics/icons/arrows/signal-left-right-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-left-right-arrow.png",
+      "locale_en": "Left-right arrow",
+      "locale_ru": "Стрелка влево-вправо",
+      "sprite": "virtual-signal/signal-left-right-arrow",
+      "rich_text": "[virtual-signal=signal-left-right-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-left-right-arrow"
+      },
+      "description": "Left-right arrow. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-up-down-arrow",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "e[up-down-arrow]",
+      "icon": "__base__/graphics/icons/arrows/signal-up-down-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-up-down-arrow.png",
+      "locale_en": "Up-down arrow",
+      "locale_ru": "Стрелка вверх-вниз",
+      "sprite": "virtual-signal/signal-up-down-arrow",
+      "rich_text": "[virtual-signal=signal-up-down-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-up-down-arrow"
+      },
+      "description": "Up-down arrow. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-clockwise-circle-arrow",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "f[clockwise-circle-arrow]",
+      "icon": "__base__/graphics/icons/arrows/signal-clockwise-circle-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-clockwise-circle-arrow.png",
+      "locale_en": "Clockwise circle arrow",
+      "locale_ru": "По часовой стрелке",
+      "sprite": "virtual-signal/signal-clockwise-circle-arrow",
+      "rich_text": "[virtual-signal=signal-clockwise-circle-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-clockwise-circle-arrow"
+      },
+      "description": "Clockwise circle arrow. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-anticlockwise-circle-arrow",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "g[anticlockwise-circle-arrow]",
+      "icon": "__base__/graphics/icons/arrows/signal-anticlockwise-circle-arrow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-anticlockwise-circle-arrow.png",
+      "locale_en": "Anticlockwise circle arrow",
+      "locale_ru": "Против часовой стрелки",
+      "sprite": "virtual-signal/signal-anticlockwise-circle-arrow",
+      "rich_text": "[virtual-signal=signal-anticlockwise-circle-arrow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-anticlockwise-circle-arrow"
+      },
+      "description": "Anticlockwise circle arrow. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-input",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "ha[input]",
+      "icon": "__base__/graphics/icons/arrows/signal-input.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-input.png",
+      "locale_en": "Input",
+      "locale_ru": "Вход",
+      "sprite": "virtual-signal/signal-input",
+      "rich_text": "[virtual-signal=signal-input]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-input"
+      },
+      "description": "Input. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-output",
+      "mod": "base",
+      "subgroup": "arrows-misc",
+      "order": "hb[output]",
+      "icon": "__base__/graphics/icons/arrows/signal-output.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/arrows/signal-output.png",
+      "locale_en": "Output",
+      "locale_ru": "Выход",
+      "sprite": "virtual-signal/signal-output",
+      "rich_text": "[virtual-signal=signal-output]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-output"
+      },
+      "description": "Output. Rotation / misc arrow signal."
+    },
+    {
+      "name": "signal-item-parameter",
+      "mod": "base",
+      "subgroup": "parameters",
+      "order": "z[interrupt-parameters]-a[item-parameter]",
+      "icon": "__base__/graphics/icons/signal/signal-item-parameter.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-item-parameter.png",
+      "locale_en": "Item parameter",
+      "locale_ru": "Параметр предмета",
+      "sprite": "virtual-signal/signal-item-parameter",
+      "rich_text": "[virtual-signal=signal-item-parameter]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-item-parameter"
+      },
+      "description": "Item parameter. Blueprint parameter placeholder signal."
+    },
+    {
+      "name": "signal-fuel-parameter",
+      "mod": "base",
+      "subgroup": "parameters",
+      "order": "z[interrupt-parameters]-b[fuel-parameter]",
+      "icon": "__base__/graphics/icons/signal/signal-fuel-parameter.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-fuel-parameter.png",
+      "locale_en": "Fuel parameter",
+      "locale_ru": "Параметр топлива",
+      "sprite": "virtual-signal/signal-fuel-parameter",
+      "rich_text": "[virtual-signal=signal-fuel-parameter]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-fuel-parameter"
+      },
+      "description": "Fuel parameter. Blueprint parameter placeholder signal."
+    },
+    {
+      "name": "signal-fluid-parameter",
+      "mod": "base",
+      "subgroup": "parameters",
+      "order": "z[interrupt-parameters]-c[fluid-parameter]",
+      "icon": "__base__/graphics/icons/signal/signal-fluid-parameter.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-fluid-parameter.png",
+      "locale_en": "Fluid parameter",
+      "locale_ru": "Параметр жидкости",
+      "sprite": "virtual-signal/signal-fluid-parameter",
+      "rich_text": "[virtual-signal=signal-fluid-parameter]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-fluid-parameter"
+      },
+      "description": "Fluid parameter. Blueprint parameter placeholder signal."
+    },
+    {
+      "name": "signal-signal-parameter",
+      "mod": "base",
+      "subgroup": "parameters",
+      "order": "z[interrupt-parameters]-d[signal-parameter]",
+      "icon": "__base__/graphics/icons/signal/signal-signal-parameter.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-signal-parameter.png",
+      "locale_en": "Signal parameter",
+      "locale_ru": "Параметр сигнала",
+      "sprite": "virtual-signal/signal-signal-parameter",
+      "rich_text": "[virtual-signal=signal-signal-parameter]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-signal-parameter"
+      },
+      "description": "Signal parameter. Blueprint parameter placeholder signal."
+    },
+    {
+      "name": "signal-fuel",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "a[fuel]",
+      "icon": "__base__/graphics/icons/signal/signal-fuel.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-fuel.png",
+      "locale_en": "Fuel",
+      "locale_ru": "Топливо",
+      "sprite": "virtual-signal/signal-fuel",
+      "rich_text": "[virtual-signal=signal-fuel]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-fuel"
+      },
+      "description": "Fuel. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-lightning",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "b[lightning]",
+      "icon": "__base__/graphics/icons/signal/signal-lightning.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-lightning.png",
+      "locale_en": "Electricity",
+      "locale_ru": "Электричество",
+      "sprite": "virtual-signal/signal-lightning",
+      "rich_text": "[virtual-signal=signal-lightning]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-lightning"
+      },
+      "description": "Electricity. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-battery-low",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "ca[battery-low]",
+      "icon": "__base__/graphics/icons/signal/signal-battery-low.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-battery-low.png",
+      "locale_en": "Low battery",
+      "locale_ru": "Низкий заряд аккумулятора",
+      "sprite": "virtual-signal/signal-battery-low",
+      "rich_text": "[virtual-signal=signal-battery-low]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-battery-low"
+      },
+      "description": "Low battery. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-battery-mid-level",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "cb[battery-mid-level]",
+      "icon": "__base__/graphics/icons/signal/signal-battery-mid-level.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-battery-mid-level.png",
+      "locale_en": "Mid-level battery",
+      "locale_ru": "Половина заряда аккумулятора",
+      "sprite": "virtual-signal/signal-battery-mid-level",
+      "rich_text": "[virtual-signal=signal-battery-mid-level]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-battery-mid-level"
+      },
+      "description": "Mid-level battery. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-battery-full",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "cd[battery-full]",
+      "icon": "__base__/graphics/icons/signal/signal-battery-full.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-battery-full.png",
+      "locale_en": "Full battery",
+      "locale_ru": "Полный аккумулятор",
+      "sprite": "virtual-signal/signal-battery-full",
+      "rich_text": "[virtual-signal=signal-battery-full]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-battery-full"
+      },
+      "description": "Full battery. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-radioactivity",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "d[radioactivity]",
+      "icon": "__base__/graphics/icons/signal/signal-radioactivity.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-radioactivity.png",
+      "locale_en": "Radioactivity",
+      "locale_ru": "Радиоактивность",
+      "sprite": "virtual-signal/signal-radioactivity",
+      "rich_text": "[virtual-signal=signal-radioactivity]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-radioactivity"
+      },
+      "description": "Radioactivity. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-thermometer-blue",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "e[thermometer-blue]",
+      "icon": "__base__/graphics/icons/signal/signal-thermometer-blue.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-thermometer-blue.png",
+      "locale_en": "Thermometer Low",
+      "locale_ru": "Низкая температура",
+      "sprite": "virtual-signal/signal-thermometer-blue",
+      "rich_text": "[virtual-signal=signal-thermometer-blue]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-thermometer-blue"
+      },
+      "description": "Thermometer Low. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-thermometer-red",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "eb[thermometer-red]",
+      "icon": "__base__/graphics/icons/signal/signal-thermometer-red.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-thermometer-red.png",
+      "locale_en": "Thermometer High",
+      "locale_ru": "Высокая температура",
+      "sprite": "virtual-signal/signal-thermometer-red",
+      "rich_text": "[virtual-signal=signal-thermometer-red]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-thermometer-red"
+      },
+      "description": "Thermometer High. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-fire",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "f[fire]",
+      "icon": "__base__/graphics/icons/signal/signal-fire.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-fire.png",
+      "locale_en": "Fire",
+      "locale_ru": "Огонь",
+      "sprite": "virtual-signal/signal-fire",
+      "rich_text": "[virtual-signal=signal-fire]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-fire"
+      },
+      "description": "Fire. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-snowflake",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "g[snowflake]",
+      "icon": "__base__/graphics/icons/signal/signal-snowflake.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-snowflake.png",
+      "locale_en": "Snowflake",
+      "locale_ru": "Снежинка",
+      "sprite": "virtual-signal/signal-snowflake",
+      "rich_text": "[virtual-signal=signal-snowflake]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-snowflake"
+      },
+      "description": "Snowflake. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-explosion",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "gb[explosion]",
+      "icon": "__base__/graphics/icons/signal/signal-explosion.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-explosion.png",
+      "locale_en": "Explosion",
+      "locale_ru": "Взрыв",
+      "sprite": "virtual-signal/signal-explosion",
+      "rich_text": "[virtual-signal=signal-explosion]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-explosion"
+      },
+      "description": "Explosion. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-liquid",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "h[liquid]",
+      "icon": "__base__/graphics/icons/signal/signal-liquid.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-liquid.png",
+      "locale_en": "Liquid",
+      "locale_ru": "Жидкость",
+      "sprite": "virtual-signal/signal-liquid",
+      "rich_text": "[virtual-signal=signal-liquid]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-liquid"
+      },
+      "description": "Liquid. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-stack-size",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "i[stack]",
+      "icon": "__base__/graphics/icons/signal/signal-stack-size.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-stack-size.png",
+      "locale_en": "Stack size",
+      "locale_ru": "Размер пачки",
+      "sprite": "virtual-signal/signal-stack-size",
+      "rich_text": "[virtual-signal=signal-stack-size]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-stack-size"
+      },
+      "description": "Stack size. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-recycle",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "j[recycle]",
+      "icon": "__base__/graphics/icons/signal/signal-recycle.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-recycle.png",
+      "locale_en": "Recycle",
+      "locale_ru": "Переработка",
+      "sprite": "virtual-signal/signal-recycle",
+      "rich_text": "[virtual-signal=signal-recycle]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-recycle"
+      },
+      "description": "Recycle. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-trash-bin",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "k[trash-bin]",
+      "icon": "__base__/graphics/icons/signal/signal-trash-bin.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-trash-bin.png",
+      "locale_en": "Trash bin",
+      "locale_ru": "Мусорная корзина",
+      "sprite": "virtual-signal/signal-trash-bin",
+      "rich_text": "[virtual-signal=signal-trash-bin]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-trash-bin"
+      },
+      "description": "Trash bin. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-science-pack",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "l[science-pack]",
+      "icon": "__base__/graphics/icons/signal/signal-science-pack.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-science-pack.png",
+      "locale_en": "Science pack",
+      "locale_ru": "Исследовательский пакет",
+      "sprite": "virtual-signal/signal-science-pack",
+      "rich_text": "[virtual-signal=signal-science-pack]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-science-pack"
+      },
+      "description": "Science pack. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-map-marker",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "m[map-marker]",
+      "icon": "__base__/graphics/icons/signal/signal-map-marker.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-map-marker.png",
+      "locale_en": "Map marker",
+      "locale_ru": "Метка на карте",
+      "sprite": "virtual-signal/signal-map-marker",
+      "rich_text": "[virtual-signal=signal-map-marker]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-map-marker"
+      },
+      "description": "Map marker. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-white-flag",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "mb[white-flag]",
+      "icon": "__base__/graphics/icons/signal/signal-white-flag.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-white-flag.png",
+      "locale_en": "Flag",
+      "locale_ru": "Флаг",
+      "sprite": "virtual-signal/signal-white-flag",
+      "rich_text": "[virtual-signal=signal-white-flag]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-white-flag"
+      },
+      "description": "Flag. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-lock",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "n[lock]",
+      "icon": "__base__/graphics/icons/signal/signal-lock.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-lock.png",
+      "locale_en": "Lock",
+      "locale_ru": "Заблокировать",
+      "sprite": "virtual-signal/signal-lock",
+      "rich_text": "[virtual-signal=signal-lock]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-lock"
+      },
+      "description": "Lock. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-unlock",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "nb[unlock]",
+      "icon": "__base__/graphics/icons/signal/signal-unlock.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-unlock.png",
+      "locale_en": "Unlock",
+      "locale_ru": "Разблокировать",
+      "sprite": "virtual-signal/signal-unlock",
+      "rich_text": "[virtual-signal=signal-unlock]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-unlock"
+      },
+      "description": "Unlock. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-speed",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "o[speed]",
+      "icon": "__base__/graphics/icons/signal/signal-speed.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-speed.png",
+      "locale_en": "Speed",
+      "locale_ru": "Скорость",
+      "sprite": "virtual-signal/signal-speed",
+      "rich_text": "[virtual-signal=signal-speed]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-speed"
+      },
+      "description": "Speed. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-clock",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "p[clock]",
+      "icon": "__base__/graphics/icons/signal/signal-clock.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-clock.png",
+      "locale_en": "Clock",
+      "locale_ru": "Часы",
+      "sprite": "virtual-signal/signal-clock",
+      "rich_text": "[virtual-signal=signal-clock]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-clock"
+      },
+      "description": "Clock. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-hourglass",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "pb[hourglass]",
+      "icon": "__base__/graphics/icons/signal/signal-hourglass.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-hourglass.png",
+      "locale_en": "Wait",
+      "locale_ru": "Ждите",
+      "sprite": "virtual-signal/signal-hourglass",
+      "rich_text": "[virtual-signal=signal-hourglass]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-hourglass"
+      },
+      "description": "Wait. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-alarm",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "pc[alarm]",
+      "icon": "__base__/graphics/icons/signal/signal-alarm.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-alarm.png",
+      "locale_en": "Alarm",
+      "locale_ru": "Тревога",
+      "sprite": "virtual-signal/signal-alarm",
+      "rich_text": "[virtual-signal=signal-alarm]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-alarm"
+      },
+      "description": "Alarm. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-sun",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "pd[sun]",
+      "icon": "__base__/graphics/icons/signal/signal-sun.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-sun.png",
+      "locale_en": "Sun",
+      "locale_ru": "Солнце",
+      "sprite": "virtual-signal/signal-sun",
+      "rich_text": "[virtual-signal=signal-sun]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-sun"
+      },
+      "description": "Sun. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-moon",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "pe[moon]",
+      "icon": "__base__/graphics/icons/signal/signal-moon.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-moon.png",
+      "locale_en": "Moon",
+      "locale_ru": "Луна",
+      "sprite": "virtual-signal/signal-moon",
+      "rich_text": "[virtual-signal=signal-moon]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-moon"
+      },
+      "description": "Moon. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-mining",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "q[mining]",
+      "icon": "__base__/graphics/icons/signal/signal-mining.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-mining.png",
+      "locale_en": "Pick",
+      "locale_ru": "Кирка",
+      "sprite": "virtual-signal/signal-mining",
+      "rich_text": "[virtual-signal=signal-mining]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-mining"
+      },
+      "description": "Pick. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-skull",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "sj[skull]",
+      "icon": "__base__/graphics/icons/signal/signal-skull.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-skull.png",
+      "locale_en": "Skull",
+      "locale_ru": "Череп",
+      "sprite": "virtual-signal/signal-skull",
+      "rich_text": "[virtual-signal=signal-skull]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-skull"
+      },
+      "description": "Skull. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-damage",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "sjb[damage]",
+      "icon": "__base__/graphics/icons/signal/signal-damage.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-damage.png",
+      "locale_en": "Damage",
+      "locale_ru": "Урон",
+      "sprite": "virtual-signal/signal-damage",
+      "rich_text": "[virtual-signal=signal-damage]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-damage"
+      },
+      "description": "Damage. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-weapon",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "sjc[weapon]",
+      "icon": "__base__/graphics/icons/signal/signal-weapon.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-weapon.png",
+      "locale_en": "Weapon",
+      "locale_ru": "Оружие",
+      "sprite": "virtual-signal/signal-weapon",
+      "rich_text": "[virtual-signal=signal-weapon]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-weapon"
+      },
+      "description": "Weapon. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "signal-ghost",
+      "mod": "base",
+      "subgroup": "pictographs",
+      "order": "sjd[ghost]",
+      "icon": "__base__/graphics/icons/signal/signal-ghost.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-ghost.png",
+      "locale_en": "Ghost",
+      "locale_ru": "Призрак",
+      "sprite": "virtual-signal/signal-ghost",
+      "rich_text": "[virtual-signal=signal-ghost]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-ghost"
+      },
+      "description": "Ghost. Pictograph signal (status or theme symbol)."
+    },
+    {
+      "name": "shape-vertical",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "a[straight-vertical]",
+      "icon": "__base__/graphics/icons/shapes/shape-vertical.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-vertical.png",
+      "locale_en": "Vertical",
+      "locale_ru": "Вертикаль",
+      "sprite": "virtual-signal/shape-vertical",
+      "rich_text": "[virtual-signal=shape-vertical]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-vertical"
+      },
+      "description": "Vertical. Geometric shape signal."
+    },
+    {
+      "name": "shape-horizontal",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "b[straight-horizontal]",
+      "icon": "__base__/graphics/icons/shapes/shape-horizontal.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-horizontal.png",
+      "locale_en": "Horizontal",
+      "locale_ru": "Горизонталь",
+      "sprite": "virtual-signal/shape-horizontal",
+      "rich_text": "[virtual-signal=shape-horizontal]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-horizontal"
+      },
+      "description": "Horizontal. Geometric shape signal."
+    },
+    {
+      "name": "shape-curve",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "c[curve-1]",
+      "icon": "__base__/graphics/icons/shapes/shape-curve.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-curve.png",
+      "locale_en": "Curve",
+      "locale_ru": "Кривая",
+      "sprite": "virtual-signal/shape-curve",
+      "rich_text": "[virtual-signal=shape-curve]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-curve"
+      },
+      "description": "Curve. Geometric shape signal."
+    },
+    {
+      "name": "shape-curve-2",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "c[curve-2]",
+      "icon": "__base__/graphics/icons/shapes/shape-curve-2.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-curve-2.png",
+      "locale_en": "Curve",
+      "locale_ru": "Кривая",
+      "sprite": "virtual-signal/shape-curve-2",
+      "rich_text": "[virtual-signal=shape-curve-2]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-curve-2"
+      },
+      "description": "Curve. Geometric shape signal."
+    },
+    {
+      "name": "shape-corner",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "d[corner-1]",
+      "icon": "__base__/graphics/icons/shapes/shape-corner.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-corner.png",
+      "locale_en": "Corner",
+      "locale_ru": "Угол",
+      "sprite": "virtual-signal/shape-corner",
+      "rich_text": "[virtual-signal=shape-corner]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-corner"
+      },
+      "description": "Corner. Geometric shape signal."
+    },
+    {
+      "name": "shape-corner-2",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "d[corner-2]",
+      "icon": "__base__/graphics/icons/shapes/shape-corner-2.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-corner-2.png",
+      "locale_en": "Corner",
+      "locale_ru": "Угол",
+      "sprite": "virtual-signal/shape-corner-2",
+      "rich_text": "[virtual-signal=shape-corner-2]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-corner-2"
+      },
+      "description": "Corner. Geometric shape signal."
+    },
+    {
+      "name": "shape-t",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "e[t-1]",
+      "icon": "__base__/graphics/icons/shapes/shape-t.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-t.png",
+      "locale_en": "T cross",
+      "locale_ru": "Т-пересечение",
+      "sprite": "virtual-signal/shape-t",
+      "rich_text": "[virtual-signal=shape-t]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-t"
+      },
+      "description": "T cross. Geometric shape signal."
+    },
+    {
+      "name": "shape-t-2",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "e[t-2]",
+      "icon": "__base__/graphics/icons/shapes/shape-t-2.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-t-2.png",
+      "locale_en": "T cross",
+      "locale_ru": "Т- образное пересечение",
+      "sprite": "virtual-signal/shape-t-2",
+      "rich_text": "[virtual-signal=shape-t-2]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-t-2"
+      },
+      "description": "T cross. Geometric shape signal."
+    },
+    {
+      "name": "shape-cross",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "f[cross]",
+      "icon": "__base__/graphics/icons/shapes/shape-cross.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-cross.png",
+      "locale_en": "Cross",
+      "locale_ru": "Пересечение",
+      "sprite": "virtual-signal/shape-cross",
+      "rich_text": "[virtual-signal=shape-cross]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-cross"
+      },
+      "description": "Cross. Geometric shape signal."
+    },
+    {
+      "name": "shape-diagonal-cross",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "g[diagonal-cross]",
+      "icon": "__base__/graphics/icons/shapes/shape-diagonal-cross.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-diagonal-cross.png",
+      "locale_en": "Diagonal Cross",
+      "locale_ru": "Диагональное пересечение",
+      "sprite": "virtual-signal/shape-diagonal-cross",
+      "rich_text": "[virtual-signal=shape-diagonal-cross]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-diagonal-cross"
+      },
+      "description": "Diagonal Cross. Geometric shape signal."
+    },
+    {
+      "name": "shape-diagonal",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "h[diagonal-1]",
+      "icon": "__base__/graphics/icons/shapes/shape-diagonal.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-diagonal.png",
+      "locale_en": "Diagonal",
+      "locale_ru": "Диагональ",
+      "sprite": "virtual-signal/shape-diagonal",
+      "rich_text": "[virtual-signal=shape-diagonal]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-diagonal"
+      },
+      "description": "Diagonal. Geometric shape signal."
+    },
+    {
+      "name": "shape-diagonal-2",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "h[diagonal-2]",
+      "icon": "__base__/graphics/icons/shapes/shape-diagonal-2.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-diagonal-2.png",
+      "locale_en": "Diagonal",
+      "locale_ru": "Диагональ",
+      "sprite": "virtual-signal/shape-diagonal-2",
+      "rich_text": "[virtual-signal=shape-diagonal-2]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-diagonal-2"
+      },
+      "description": "Diagonal. Geometric shape signal."
+    },
+    {
+      "name": "shape-curve-3",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "i[curve-3]",
+      "icon": "__base__/graphics/icons/shapes/shape-curve-3.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-curve-3.png",
+      "locale_en": "Curve",
+      "locale_ru": "Кривая",
+      "sprite": "virtual-signal/shape-curve-3",
+      "rich_text": "[virtual-signal=shape-curve-3]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-curve-3"
+      },
+      "description": "Curve. Geometric shape signal."
+    },
+    {
+      "name": "shape-curve-4",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "i[curve-4]",
+      "icon": "__base__/graphics/icons/shapes/shape-curve-4.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-curve-4.png",
+      "locale_en": "Curve",
+      "locale_ru": "Кривая",
+      "sprite": "virtual-signal/shape-curve-4",
+      "rich_text": "[virtual-signal=shape-curve-4]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-curve-4"
+      },
+      "description": "Curve. Geometric shape signal."
+    },
+    {
+      "name": "shape-corner-4",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "ja[corner-4]",
+      "icon": "__base__/graphics/icons/shapes/shape-corner-4.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-corner-4.png",
+      "locale_en": "Corner",
+      "locale_ru": "Угол",
+      "sprite": "virtual-signal/shape-corner-4",
+      "rich_text": "[virtual-signal=shape-corner-4]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-corner-4"
+      },
+      "description": "Corner. Geometric shape signal."
+    },
+    {
+      "name": "shape-corner-3",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "jb[corner-3]",
+      "icon": "__base__/graphics/icons/shapes/shape-corner-3.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-corner-3.png",
+      "locale_en": "Corner",
+      "locale_ru": "Угол",
+      "sprite": "virtual-signal/shape-corner-3",
+      "rich_text": "[virtual-signal=shape-corner-3]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-corner-3"
+      },
+      "description": "Corner. Geometric shape signal."
+    },
+    {
+      "name": "shape-t-4",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "k[t-4]",
+      "icon": "__base__/graphics/icons/shapes/shape-t-4.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-t-4.png",
+      "locale_en": "T cross",
+      "locale_ru": "Т- образное пересечение",
+      "sprite": "virtual-signal/shape-t-4",
+      "rich_text": "[virtual-signal=shape-t-4]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-t-4"
+      },
+      "description": "T cross. Geometric shape signal."
+    },
+    {
+      "name": "shape-t-3",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "kb[t-3]",
+      "icon": "__base__/graphics/icons/shapes/shape-t-3.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-t-3.png",
+      "locale_en": "T cross",
+      "locale_ru": "Т- образное пересечение",
+      "sprite": "virtual-signal/shape-t-3",
+      "rich_text": "[virtual-signal=shape-t-3]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-t-3"
+      },
+      "description": "T cross. Geometric shape signal."
+    },
+    {
+      "name": "shape-circle",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "l[circle]",
+      "icon": "__base__/graphics/icons/shapes/shape-circle.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/shapes/shape-circle.png",
+      "locale_en": "Circle",
+      "locale_ru": "Круг",
+      "sprite": "virtual-signal/shape-circle",
+      "rich_text": "[virtual-signal=shape-circle]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "shape-circle"
+      },
+      "description": "Circle. Geometric shape signal."
+    },
+    {
+      "name": "signal-dot",
+      "mod": "base",
+      "subgroup": "shapes",
+      "order": "m[dot]",
+      "icon": "__base__/graphics/icons/list-dot.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/list-dot.png",
+      "locale_en": "Dot signal",
+      "locale_ru": "Сигнал точка",
+      "sprite": "virtual-signal/signal-dot",
+      "rich_text": "[virtual-signal=signal-dot]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-dot"
+      },
+      "description": "Dot signal. Geometric shape signal."
+    },
+    {
+      "name": "signal-check",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "a[checked]",
+      "icon": "__base__/graphics/icons/signal/signal-checked-green.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-checked-green.png",
+      "locale_en": "Check signal",
+      "locale_ru": "Сигнал галочка",
+      "sprite": "virtual-signal/signal-check",
+      "rich_text": "[virtual-signal=signal-check]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-check"
+      },
+      "description": "Check signal. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-deny",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "b[deny]",
+      "icon": "__base__/graphics/icons/signal/signal-deny.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-deny.png",
+      "locale_en": "Deny signal",
+      "locale_ru": "Сигнал запрета",
+      "sprite": "virtual-signal/signal-deny",
+      "rich_text": "[virtual-signal=signal-deny]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-deny"
+      },
+      "description": "Deny signal. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-no-entry",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "c[no-entry]",
+      "icon": "__base__/graphics/icons/signal/signal-no-entry.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-no-entry.png",
+      "locale_en": "No entry",
+      "locale_ru": "Входа нет",
+      "sprite": "virtual-signal/signal-no-entry",
+      "rich_text": "[virtual-signal=signal-no-entry]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-no-entry"
+      },
+      "description": "No entry. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-heart",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "d[heart]",
+      "icon": "__base__/graphics/icons/signal/signal-heart.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-heart.png",
+      "locale_en": "Heart",
+      "locale_ru": "Сердце",
+      "sprite": "virtual-signal/signal-heart",
+      "rich_text": "[virtual-signal=signal-heart]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-heart"
+      },
+      "description": "Heart. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-alert",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "e[alert]",
+      "icon": "__base__/graphics/icons/signal/signal-alert.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-alert.png",
+      "locale_en": "Alert",
+      "locale_ru": "Оповещение",
+      "sprite": "virtual-signal/signal-alert",
+      "rich_text": "[virtual-signal=signal-alert]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-alert"
+      },
+      "description": "Alert. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-star",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "f[star]",
+      "icon": "__base__/graphics/icons/signal/signal-star.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-star.png",
+      "locale_en": "Star",
+      "locale_ru": "Звезда",
+      "sprite": "virtual-signal/signal-star",
+      "rich_text": "[virtual-signal=signal-star]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-star"
+      },
+      "description": "Star. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-info",
+      "mod": "base",
+      "subgroup": "virtual-signal",
+      "order": "i[info]",
+      "icon": "__base__/graphics/icons/info.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/info.png",
+      "locale_en": "Info signal",
+      "locale_ru": "Сигнал инфо",
+      "sprite": "virtual-signal/signal-info",
+      "rich_text": "[virtual-signal=signal-info]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-info"
+      },
+      "description": "Info signal. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-red",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[1red]",
+      "icon": "__base__/graphics/icons/signal/signal_red.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_red.png",
+      "locale_en": "Red signal",
+      "locale_ru": "Красный сигнал",
+      "sprite": "virtual-signal/signal-red",
+      "rich_text": "[virtual-signal=signal-red]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-red"
+      },
+      "description": "Red signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-green",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[2green]",
+      "icon": "__base__/graphics/icons/signal/signal_green.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_green.png",
+      "locale_en": "Green signal",
+      "locale_ru": "Зелёный сигнал",
+      "sprite": "virtual-signal/signal-green",
+      "rich_text": "[virtual-signal=signal-green]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-green"
+      },
+      "description": "Green signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-blue",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[3blue]",
+      "icon": "__base__/graphics/icons/signal/signal_blue.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_blue.png",
+      "locale_en": "Blue signal",
+      "locale_ru": "Синий сигнал",
+      "sprite": "virtual-signal/signal-blue",
+      "rich_text": "[virtual-signal=signal-blue]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-blue"
+      },
+      "description": "Blue signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-yellow",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[4yellow]",
+      "icon": "__base__/graphics/icons/signal/signal_yellow.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_yellow.png",
+      "locale_en": "Yellow signal",
+      "locale_ru": "Жёлтый сигнал",
+      "sprite": "virtual-signal/signal-yellow",
+      "rich_text": "[virtual-signal=signal-yellow]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-yellow"
+      },
+      "description": "Yellow signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-pink",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[5pink]",
+      "icon": "__base__/graphics/icons/signal/signal_pink.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_pink.png",
+      "locale_en": "Pink signal",
+      "locale_ru": "Розовый сигнал",
+      "sprite": "virtual-signal/signal-pink",
+      "rich_text": "[virtual-signal=signal-pink]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-pink"
+      },
+      "description": "Pink signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-cyan",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[6cyan]",
+      "icon": "__base__/graphics/icons/signal/signal_cyan.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_cyan.png",
+      "locale_en": "Cyan signal",
+      "locale_ru": "Бирюзовый сигнал",
+      "sprite": "virtual-signal/signal-cyan",
+      "rich_text": "[virtual-signal=signal-cyan]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-cyan"
+      },
+      "description": "Cyan signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-white",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[7white]",
+      "icon": "__base__/graphics/icons/signal/signal_white.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_white.png",
+      "locale_en": "White signal",
+      "locale_ru": "Белый сигнал",
+      "sprite": "virtual-signal/signal-white",
+      "rich_text": "[virtual-signal=signal-white]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-white"
+      },
+      "description": "White signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-grey",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[8grey]",
+      "icon": "__base__/graphics/icons/signal/signal_grey.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_grey.png",
+      "locale_en": "Grey signal",
+      "locale_ru": "Серый сигнал",
+      "sprite": "virtual-signal/signal-grey",
+      "rich_text": "[virtual-signal=signal-grey]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-grey"
+      },
+      "description": "Grey signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-black",
+      "mod": "base",
+      "subgroup": "virtual-signal-color",
+      "order": "d[colors]-[9black]",
+      "icon": "__base__/graphics/icons/signal/signal_black.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_black.png",
+      "locale_en": "Black signal",
+      "locale_ru": "Чёрный сигнал",
+      "sprite": "virtual-signal/signal-black",
+      "rich_text": "[virtual-signal=signal-black]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-black"
+      },
+      "description": "Black signal. Solid color signal, often used for lamp colors or status."
+    },
+    {
+      "name": "signal-A",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[A]",
+      "icon": "__base__/graphics/icons/signal/signal_A.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_A.png",
+      "locale_en": "Signal A",
+      "locale_ru": "Сигнал A",
+      "sprite": "virtual-signal/signal-A",
+      "rich_text": "[virtual-signal=signal-A]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-A"
+      },
+      "description": "Signal A. Latin letter signal."
+    },
+    {
+      "name": "signal-B",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[B]",
+      "icon": "__base__/graphics/icons/signal/signal_B.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_B.png",
+      "locale_en": "Signal B",
+      "locale_ru": "Сигнал B",
+      "sprite": "virtual-signal/signal-B",
+      "rich_text": "[virtual-signal=signal-B]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-B"
+      },
+      "description": "Signal B. Latin letter signal."
+    },
+    {
+      "name": "signal-C",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[C]",
+      "icon": "__base__/graphics/icons/signal/signal_C.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_C.png",
+      "locale_en": "Signal C",
+      "locale_ru": "Сигнал C",
+      "sprite": "virtual-signal/signal-C",
+      "rich_text": "[virtual-signal=signal-C]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-C"
+      },
+      "description": "Signal C. Latin letter signal."
+    },
+    {
+      "name": "signal-D",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[D]",
+      "icon": "__base__/graphics/icons/signal/signal_D.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_D.png",
+      "locale_en": "Signal D",
+      "locale_ru": "Сигнал D",
+      "sprite": "virtual-signal/signal-D",
+      "rich_text": "[virtual-signal=signal-D]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-D"
+      },
+      "description": "Signal D. Latin letter signal."
+    },
+    {
+      "name": "signal-E",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[E]",
+      "icon": "__base__/graphics/icons/signal/signal_E.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_E.png",
+      "locale_en": "Signal E",
+      "locale_ru": "Сигнал E",
+      "sprite": "virtual-signal/signal-E",
+      "rich_text": "[virtual-signal=signal-E]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-E"
+      },
+      "description": "Signal E. Latin letter signal."
+    },
+    {
+      "name": "signal-F",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[F]",
+      "icon": "__base__/graphics/icons/signal/signal_F.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_F.png",
+      "locale_en": "Signal F",
+      "locale_ru": "Сигнал F",
+      "sprite": "virtual-signal/signal-F",
+      "rich_text": "[virtual-signal=signal-F]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-F"
+      },
+      "description": "Signal F. Latin letter signal."
+    },
+    {
+      "name": "signal-G",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[G]",
+      "icon": "__base__/graphics/icons/signal/signal_G.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_G.png",
+      "locale_en": "Signal G",
+      "locale_ru": "Сигнал G",
+      "sprite": "virtual-signal/signal-G",
+      "rich_text": "[virtual-signal=signal-G]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-G"
+      },
+      "description": "Signal G. Latin letter signal."
+    },
+    {
+      "name": "signal-H",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[H]",
+      "icon": "__base__/graphics/icons/signal/signal_H.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_H.png",
+      "locale_en": "Signal H",
+      "locale_ru": "Сигнал H",
+      "sprite": "virtual-signal/signal-H",
+      "rich_text": "[virtual-signal=signal-H]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-H"
+      },
+      "description": "Signal H. Latin letter signal."
+    },
+    {
+      "name": "signal-I",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[I]",
+      "icon": "__base__/graphics/icons/signal/signal_I.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_I.png",
+      "locale_en": "Signal I",
+      "locale_ru": "Сигнал I",
+      "sprite": "virtual-signal/signal-I",
+      "rich_text": "[virtual-signal=signal-I]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-I"
+      },
+      "description": "Signal I. Latin letter signal."
+    },
+    {
+      "name": "signal-J",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[J]",
+      "icon": "__base__/graphics/icons/signal/signal_J.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_J.png",
+      "locale_en": "Signal J",
+      "locale_ru": "Сигнал J",
+      "sprite": "virtual-signal/signal-J",
+      "rich_text": "[virtual-signal=signal-J]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-J"
+      },
+      "description": "Signal J. Latin letter signal."
+    },
+    {
+      "name": "signal-K",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[K]",
+      "icon": "__base__/graphics/icons/signal/signal_K.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_K.png",
+      "locale_en": "Signal K",
+      "locale_ru": "Сигнал K",
+      "sprite": "virtual-signal/signal-K",
+      "rich_text": "[virtual-signal=signal-K]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-K"
+      },
+      "description": "Signal K. Latin letter signal."
+    },
+    {
+      "name": "signal-L",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[L]",
+      "icon": "__base__/graphics/icons/signal/signal_L.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_L.png",
+      "locale_en": "Signal L",
+      "locale_ru": "Сигнал L",
+      "sprite": "virtual-signal/signal-L",
+      "rich_text": "[virtual-signal=signal-L]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-L"
+      },
+      "description": "Signal L. Latin letter signal."
+    },
+    {
+      "name": "signal-M",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[M]",
+      "icon": "__base__/graphics/icons/signal/signal_M.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_M.png",
+      "locale_en": "Signal M",
+      "locale_ru": "Сигнал М",
+      "sprite": "virtual-signal/signal-M",
+      "rich_text": "[virtual-signal=signal-M]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-M"
+      },
+      "description": "Signal M. Latin letter signal."
+    },
+    {
+      "name": "signal-N",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[N]",
+      "icon": "__base__/graphics/icons/signal/signal_N.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_N.png",
+      "locale_en": "Signal N",
+      "locale_ru": "Сигнал N",
+      "sprite": "virtual-signal/signal-N",
+      "rich_text": "[virtual-signal=signal-N]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-N"
+      },
+      "description": "Signal N. Latin letter signal."
+    },
+    {
+      "name": "signal-O",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[O]",
+      "icon": "__base__/graphics/icons/signal/signal_O.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_O.png",
+      "locale_en": "Signal O",
+      "locale_ru": "Сигнал O",
+      "sprite": "virtual-signal/signal-O",
+      "rich_text": "[virtual-signal=signal-O]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-O"
+      },
+      "description": "Signal O. Latin letter signal."
+    },
+    {
+      "name": "signal-P",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[P]",
+      "icon": "__base__/graphics/icons/signal/signal_P.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_P.png",
+      "locale_en": "Signal P",
+      "locale_ru": "Сигнал P",
+      "sprite": "virtual-signal/signal-P",
+      "rich_text": "[virtual-signal=signal-P]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-P"
+      },
+      "description": "Signal P. Latin letter signal."
+    },
+    {
+      "name": "signal-Q",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[Q]",
+      "icon": "__base__/graphics/icons/signal/signal_Q.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_Q.png",
+      "locale_en": "Signal Q",
+      "locale_ru": "Сигнал Q",
+      "sprite": "virtual-signal/signal-Q",
+      "rich_text": "[virtual-signal=signal-Q]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-Q"
+      },
+      "description": "Signal Q. Latin letter signal."
+    },
+    {
+      "name": "signal-R",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[R]",
+      "icon": "__base__/graphics/icons/signal/signal_R.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_R.png",
+      "locale_en": "Signal R",
+      "locale_ru": "Сигнал R",
+      "sprite": "virtual-signal/signal-R",
+      "rich_text": "[virtual-signal=signal-R]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-R"
+      },
+      "description": "Signal R. Latin letter signal."
+    },
+    {
+      "name": "signal-S",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[S]",
+      "icon": "__base__/graphics/icons/signal/signal_S.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_S.png",
+      "locale_en": "Signal S",
+      "locale_ru": "Сигнал S",
+      "sprite": "virtual-signal/signal-S",
+      "rich_text": "[virtual-signal=signal-S]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-S"
+      },
+      "description": "Signal S. Latin letter signal."
+    },
+    {
+      "name": "signal-T",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[T]",
+      "icon": "__base__/graphics/icons/signal/signal_T.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_T.png",
+      "locale_en": "Signal T",
+      "locale_ru": "Сигнал T",
+      "sprite": "virtual-signal/signal-T",
+      "rich_text": "[virtual-signal=signal-T]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-T"
+      },
+      "description": "Signal T. Latin letter signal."
+    },
+    {
+      "name": "signal-U",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[U]",
+      "icon": "__base__/graphics/icons/signal/signal_U.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_U.png",
+      "locale_en": "Signal U",
+      "locale_ru": "Сигнал U",
+      "sprite": "virtual-signal/signal-U",
+      "rich_text": "[virtual-signal=signal-U]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-U"
+      },
+      "description": "Signal U. Latin letter signal."
+    },
+    {
+      "name": "signal-V",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[V]",
+      "icon": "__base__/graphics/icons/signal/signal_V.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_V.png",
+      "locale_en": "Signal V",
+      "locale_ru": "Сигнал V",
+      "sprite": "virtual-signal/signal-V",
+      "rich_text": "[virtual-signal=signal-V]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-V"
+      },
+      "description": "Signal V. Latin letter signal."
+    },
+    {
+      "name": "signal-W",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[W]",
+      "icon": "__base__/graphics/icons/signal/signal_W.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_W.png",
+      "locale_en": "Signal W",
+      "locale_ru": "Сигнал W",
+      "sprite": "virtual-signal/signal-W",
+      "rich_text": "[virtual-signal=signal-W]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-W"
+      },
+      "description": "Signal W. Latin letter signal."
+    },
+    {
+      "name": "signal-X",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[X]",
+      "icon": "__base__/graphics/icons/signal/signal_X.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_X.png",
+      "locale_en": "Signal X",
+      "locale_ru": "Сигнал X",
+      "sprite": "virtual-signal/signal-X",
+      "rich_text": "[virtual-signal=signal-X]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-X"
+      },
+      "description": "Signal X. Latin letter signal."
+    },
+    {
+      "name": "signal-Y",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[Y]",
+      "icon": "__base__/graphics/icons/signal/signal_Y.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_Y.png",
+      "locale_en": "Signal Y",
+      "locale_ru": "Сигнал Y",
+      "sprite": "virtual-signal/signal-Y",
+      "rich_text": "[virtual-signal=signal-Y]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-Y"
+      },
+      "description": "Signal Y. Latin letter signal."
+    },
+    {
+      "name": "signal-Z",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "c[letters]-[Z]",
+      "icon": "__base__/graphics/icons/signal/signal_Z.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_Z.png",
+      "locale_en": "Signal Z",
+      "locale_ru": "Сигнал Z",
+      "sprite": "virtual-signal/signal-Z",
+      "rich_text": "[virtual-signal=signal-Z]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-Z"
+      },
+      "description": "Signal Z. Latin letter signal."
+    },
+    {
+      "name": "signal-comma",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "zb[comma]",
+      "icon": "__base__/graphics/icons/signal/signal-comma.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-comma.png",
+      "locale_en": "Comma",
+      "locale_ru": "Запятая",
+      "sprite": "virtual-signal/signal-comma",
+      "rich_text": "[virtual-signal=signal-comma]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-comma"
+      },
+      "description": "Comma. Latin letter signal."
+    },
+    {
+      "name": "signal-letter-dot",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "zc[letter-dot]",
+      "icon": "__base__/graphics/icons/signal/signal-letter-dot.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-letter-dot.png",
+      "locale_en": "Dot",
+      "locale_ru": "Точка",
+      "sprite": "virtual-signal/signal-letter-dot",
+      "rich_text": "[virtual-signal=signal-letter-dot]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-letter-dot"
+      },
+      "description": "Dot. Latin letter signal."
+    },
+    {
+      "name": "signal-exclamation-mark",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "zd[exclamation-mark]",
+      "icon": "__base__/graphics/icons/signal/signal-exclamation-mark.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-exclamation-mark.png",
+      "locale_en": "Exclamation mark",
+      "locale_ru": "Восклицательный знак",
+      "sprite": "virtual-signal/signal-exclamation-mark",
+      "rich_text": "[virtual-signal=signal-exclamation-mark]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-exclamation-mark"
+      },
+      "description": "Exclamation mark. Latin letter signal."
+    },
+    {
+      "name": "signal-question-mark",
+      "mod": "base",
+      "subgroup": "virtual-signal-letter",
+      "order": "ze[question-mark]",
+      "icon": "__base__/graphics/icons/signal/signal-question-mark.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-question-mark.png",
+      "locale_en": "Question mark",
+      "locale_ru": "Вопросительный знак",
+      "sprite": "virtual-signal/signal-question-mark",
+      "rich_text": "[virtual-signal=signal-question-mark]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-question-mark"
+      },
+      "description": "Question mark. Latin letter signal."
+    },
+    {
+      "name": "signal-plus",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "aa[plus]",
+      "icon": "__base__/graphics/icons/signal/signal-plus.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-plus.png",
+      "locale_en": "Plus",
+      "locale_ru": "Плюс",
+      "sprite": "virtual-signal/signal-plus",
+      "rich_text": "[virtual-signal=signal-plus]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-plus"
+      },
+      "description": "Plus. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-minus",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "ab[minus]",
+      "icon": "__base__/graphics/icons/signal/signal-minus.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-minus.png",
+      "locale_en": "Minus",
+      "locale_ru": "Минус",
+      "sprite": "virtual-signal/signal-minus",
+      "rich_text": "[virtual-signal=signal-minus]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-minus"
+      },
+      "description": "Minus. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-multiplication",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "ac[multiplication]",
+      "icon": "__base__/graphics/icons/signal/signal-multiplication.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-multiplication.png",
+      "locale_en": "Multiplication",
+      "locale_ru": "Умножение",
+      "sprite": "virtual-signal/signal-multiplication",
+      "rich_text": "[virtual-signal=signal-multiplication]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-multiplication"
+      },
+      "description": "Multiplication. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-division",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "ad[division]",
+      "icon": "__base__/graphics/icons/signal/signal-division.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-division.png",
+      "locale_en": "Division",
+      "locale_ru": "Деление",
+      "sprite": "virtual-signal/signal-division",
+      "rich_text": "[virtual-signal=signal-division]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-division"
+      },
+      "description": "Division. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-equal",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "ae[equal]",
+      "icon": "__base__/graphics/icons/signal/signal-equal.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-equal.png",
+      "locale_en": "Equal",
+      "locale_ru": "Равно",
+      "sprite": "virtual-signal/signal-equal",
+      "rich_text": "[virtual-signal=signal-equal]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-equal"
+      },
+      "description": "Equal. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-not-equal",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "af[not-equal]",
+      "icon": "__base__/graphics/icons/signal/signal-not-equal.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-not-equal.png",
+      "locale_en": "Not equal",
+      "locale_ru": "Не равно",
+      "sprite": "virtual-signal/signal-not-equal",
+      "rich_text": "[virtual-signal=signal-not-equal]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-not-equal"
+      },
+      "description": "Not equal. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-less-than",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "ba[less-than]",
+      "icon": "__base__/graphics/icons/signal/signal-less-than.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-less-than.png",
+      "locale_en": "Less than",
+      "locale_ru": "Меньше",
+      "sprite": "virtual-signal/signal-less-than",
+      "rich_text": "[virtual-signal=signal-less-than]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-less-than"
+      },
+      "description": "Less than. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-greater-than",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "bb[greater-than]",
+      "icon": "__base__/graphics/icons/signal/signal-greater-than.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-greater-than.png",
+      "locale_en": "Greater than",
+      "locale_ru": "Больше",
+      "sprite": "virtual-signal/signal-greater-than",
+      "rich_text": "[virtual-signal=signal-greater-than]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-greater-than"
+      },
+      "description": "Greater than. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-less-than-or-equal-to",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "bc[less-than-or-equal-to]",
+      "icon": "__base__/graphics/icons/signal/signal-less-than-or-equal-to.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-less-than-or-equal-to.png",
+      "locale_en": "Less than or equal to",
+      "locale_ru": "Меньше или равно",
+      "sprite": "virtual-signal/signal-less-than-or-equal-to",
+      "rich_text": "[virtual-signal=signal-less-than-or-equal-to]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-less-than-or-equal-to"
+      },
+      "description": "Less than or equal to. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-greater-than-or-equal-to",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "bd[greater-than-or-equal-to]",
+      "icon": "__base__/graphics/icons/signal/signal-greater-than-or-equal-to.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-greater-than-or-equal-to.png",
+      "locale_en": "Greater than or equal to",
+      "locale_ru": "Больше или равно",
+      "sprite": "virtual-signal/signal-greater-than-or-equal-to",
+      "rich_text": "[virtual-signal=signal-greater-than-or-equal-to]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-greater-than-or-equal-to"
+      },
+      "description": "Greater than or equal to. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-left-parenthesis",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "da[left-parenthesis]",
+      "icon": "__base__/graphics/icons/signal/signal-left-parenthesis.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-left-parenthesis.png",
+      "locale_en": "Left parenthesis",
+      "locale_ru": "Левая скобка",
+      "sprite": "virtual-signal/signal-left-parenthesis",
+      "rich_text": "[virtual-signal=signal-left-parenthesis]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-left-parenthesis"
+      },
+      "description": "Left parenthesis. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-right-parenthesis",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "db[right-parenthesis]",
+      "icon": "__base__/graphics/icons/signal/signal-right-parenthesis.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-right-parenthesis.png",
+      "locale_en": "Right parenthesis",
+      "locale_ru": "Правая скобка",
+      "sprite": "virtual-signal/signal-right-parenthesis",
+      "rich_text": "[virtual-signal=signal-right-parenthesis]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-right-parenthesis"
+      },
+      "description": "Right parenthesis. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-left-square-bracket",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "dc[left-square-bracket]",
+      "icon": "__base__/graphics/icons/signal/signal-left-square-bracket.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-left-square-bracket.png",
+      "locale_en": "Left square bracket",
+      "locale_ru": "Левая квадратная скобка",
+      "sprite": "virtual-signal/signal-left-square-bracket",
+      "rich_text": "[virtual-signal=signal-left-square-bracket]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-left-square-bracket"
+      },
+      "description": "Left square bracket. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-right-square-bracket",
+      "mod": "base",
+      "subgroup": "virtual-signal-math",
+      "order": "dd[right-square-bracket]",
+      "icon": "__base__/graphics/icons/signal/signal-right-square-bracket.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-right-square-bracket.png",
+      "locale_en": "Right square bracket",
+      "locale_ru": "Правая квадратная скобка",
+      "sprite": "virtual-signal/signal-right-square-bracket",
+      "rich_text": "[virtual-signal=signal-right-square-bracket]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-right-square-bracket"
+      },
+      "description": "Right square bracket. Math / comparison operator signal."
+    },
+    {
+      "name": "signal-0",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[0]",
+      "icon": "__base__/graphics/icons/signal/signal_0.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_0.png",
+      "locale_en": "Signal 0",
+      "locale_ru": "Сигнал 0",
+      "sprite": "virtual-signal/signal-0",
+      "rich_text": "[virtual-signal=signal-0]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-0"
+      },
+      "description": "Signal 0. Digit signal."
+    },
+    {
+      "name": "signal-1",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[1]",
+      "icon": "__base__/graphics/icons/signal/signal_1.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_1.png",
+      "locale_en": "Signal 1",
+      "locale_ru": "Сигнал 1",
+      "sprite": "virtual-signal/signal-1",
+      "rich_text": "[virtual-signal=signal-1]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-1"
+      },
+      "description": "Signal 1. Digit signal."
+    },
+    {
+      "name": "signal-2",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[2]",
+      "icon": "__base__/graphics/icons/signal/signal_2.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_2.png",
+      "locale_en": "Signal 2",
+      "locale_ru": "Сигнал 2",
+      "sprite": "virtual-signal/signal-2",
+      "rich_text": "[virtual-signal=signal-2]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-2"
+      },
+      "description": "Signal 2. Digit signal."
+    },
+    {
+      "name": "signal-3",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[3]",
+      "icon": "__base__/graphics/icons/signal/signal_3.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_3.png",
+      "locale_en": "Signal 3",
+      "locale_ru": "Сигнал 3",
+      "sprite": "virtual-signal/signal-3",
+      "rich_text": "[virtual-signal=signal-3]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-3"
+      },
+      "description": "Signal 3. Digit signal."
+    },
+    {
+      "name": "signal-4",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[4]",
+      "icon": "__base__/graphics/icons/signal/signal_4.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_4.png",
+      "locale_en": "Signal 4",
+      "locale_ru": "Сигнал 4",
+      "sprite": "virtual-signal/signal-4",
+      "rich_text": "[virtual-signal=signal-4]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-4"
+      },
+      "description": "Signal 4. Digit signal."
+    },
+    {
+      "name": "signal-5",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[5]",
+      "icon": "__base__/graphics/icons/signal/signal_5.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_5.png",
+      "locale_en": "Signal 5",
+      "locale_ru": "Сигнал 5",
+      "sprite": "virtual-signal/signal-5",
+      "rich_text": "[virtual-signal=signal-5]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-5"
+      },
+      "description": "Signal 5. Digit signal."
+    },
+    {
+      "name": "signal-6",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[6]",
+      "icon": "__base__/graphics/icons/signal/signal_6.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_6.png",
+      "locale_en": "Signal 6",
+      "locale_ru": "Сигнал 6",
+      "sprite": "virtual-signal/signal-6",
+      "rich_text": "[virtual-signal=signal-6]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-6"
+      },
+      "description": "Signal 6. Digit signal."
+    },
+    {
+      "name": "signal-7",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[7]",
+      "icon": "__base__/graphics/icons/signal/signal_7.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_7.png",
+      "locale_en": "Signal 7",
+      "locale_ru": "Сигнал 7",
+      "sprite": "virtual-signal/signal-7",
+      "rich_text": "[virtual-signal=signal-7]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-7"
+      },
+      "description": "Signal 7. Digit signal."
+    },
+    {
+      "name": "signal-8",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[8]",
+      "icon": "__base__/graphics/icons/signal/signal_8.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_8.png",
+      "locale_en": "Signal 8",
+      "locale_ru": "Сигнал 8",
+      "sprite": "virtual-signal/signal-8",
+      "rich_text": "[virtual-signal=signal-8]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-8"
+      },
+      "description": "Signal 8. Digit signal."
+    },
+    {
+      "name": "signal-9",
+      "mod": "base",
+      "subgroup": "virtual-signal-number",
+      "order": "b[numbers]-[9]",
+      "icon": "__base__/graphics/icons/signal/signal_9.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_9.png",
+      "locale_en": "Signal 9",
+      "locale_ru": "Сигнал 9",
+      "sprite": "virtual-signal/signal-9",
+      "rich_text": "[virtual-signal=signal-9]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-9"
+      },
+      "description": "Signal 9. Digit signal."
+    },
+    {
+      "name": "signal-colon",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "e[colon]",
+      "icon": "__base__/graphics/icons/signal/signal-colon.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-colon.png",
+      "locale_en": "Colon",
+      "locale_ru": "Двоеточие",
+      "sprite": "virtual-signal/signal-colon",
+      "rich_text": "[virtual-signal=signal-colon]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-colon"
+      },
+      "description": "Colon. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-slash",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "f[slash]",
+      "icon": "__base__/graphics/icons/signal/signal-slash.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-slash.png",
+      "locale_en": "Slash",
+      "locale_ru": "Косая черта",
+      "sprite": "virtual-signal/signal-slash",
+      "rich_text": "[virtual-signal=signal-slash]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-slash"
+      },
+      "description": "Slash. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-apostrophe",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "g[apostrophe]",
+      "icon": "__base__/graphics/icons/signal/signal-apostrophe.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-apostrophe.png",
+      "locale_en": "Apostrophe",
+      "locale_ru": "Апостроф",
+      "sprite": "virtual-signal/signal-apostrophe",
+      "rich_text": "[virtual-signal=signal-apostrophe]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-apostrophe"
+      },
+      "description": "Apostrophe. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-quotation-mark",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "h[quotation-mark]",
+      "icon": "__base__/graphics/icons/signal/signal-quotation-mark.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-quotation-mark.png",
+      "locale_en": "Quotation mark",
+      "locale_ru": "Кавычка",
+      "sprite": "virtual-signal/signal-quotation-mark",
+      "rich_text": "[virtual-signal=signal-quotation-mark]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-quotation-mark"
+      },
+      "description": "Quotation mark. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-ampersand",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "i[ampersand]",
+      "icon": "__base__/graphics/icons/signal/signal-ampersand.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-ampersand.png",
+      "locale_en": "Ampersand",
+      "locale_ru": "Амперсанд",
+      "sprite": "virtual-signal/signal-ampersand",
+      "rich_text": "[virtual-signal=signal-ampersand]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-ampersand"
+      },
+      "description": "Ampersand. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-circumflex-accent",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "j[circumflex-accent]",
+      "icon": "__base__/graphics/icons/signal/signal-circumflex-accent.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-circumflex-accent.png",
+      "locale_en": "Circumflex accent",
+      "locale_ru": "Циркумфлекс",
+      "sprite": "virtual-signal/signal-circumflex-accent",
+      "rich_text": "[virtual-signal=signal-circumflex-accent]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-circumflex-accent"
+      },
+      "description": "Circumflex accent. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-number-sign",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "k[number-sign]",
+      "icon": "__base__/graphics/icons/signal/signal-number-sign.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-number-sign.png",
+      "locale_en": "Number sign",
+      "locale_ru": "Знак номера",
+      "sprite": "virtual-signal/signal-number-sign",
+      "rich_text": "[virtual-signal=signal-number-sign]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-number-sign"
+      },
+      "description": "Number sign. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-percent",
+      "mod": "base",
+      "subgroup": "virtual-signal-punctuation",
+      "order": "l[percent]",
+      "icon": "__base__/graphics/icons/signal/signal-percent.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal-percent.png",
+      "locale_en": "Percent",
+      "locale_ru": "Процент",
+      "sprite": "virtual-signal/signal-percent",
+      "rich_text": "[virtual-signal=signal-percent]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-percent"
+      },
+      "description": "Percent. Punctuation / symbol signal."
+    },
+    {
+      "name": "signal-everything",
+      "mod": "base",
+      "subgroup": "virtual-signal-special",
+      "order": "a[special]-[1everything]",
+      "icon": "__base__/graphics/icons/signal/signal_everything.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_everything.png",
+      "locale_en": "Everything",
+      "locale_ru": "Все",
+      "sprite": "virtual-signal/signal-everything",
+      "rich_text": "[virtual-signal=signal-everything]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-everything"
+      },
+      "description": "Everything. Wildcard signal used by combinators (everything / anything / each)."
+    },
+    {
+      "name": "signal-each",
+      "mod": "base",
+      "subgroup": "virtual-signal-special",
+      "order": "a[special]-[2each]",
+      "icon": "__base__/graphics/icons/signal/signal_each.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_each.png",
+      "locale_en": "Each",
+      "locale_ru": "Каждый",
+      "sprite": "virtual-signal/signal-each",
+      "rich_text": "[virtual-signal=signal-each]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-each"
+      },
+      "description": "Each. Wildcard signal used by combinators (everything / anything / each)."
+    },
+    {
+      "name": "signal-anything",
+      "mod": "base",
+      "subgroup": "virtual-signal-special",
+      "order": "a[special]-[3anything]",
+      "icon": "__base__/graphics/icons/signal/signal_anything.png",
+      "icon_size": 64,
+      "image_size": [
+        120,
+        64
+      ],
+      "local_preview": "assets/factorio-data/base/graphics/icons/signal/signal_anything.png",
+      "locale_en": "Anything",
+      "locale_ru": "Любой",
+      "sprite": "virtual-signal/signal-anything",
+      "rich_text": "[virtual-signal=signal-anything]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-anything"
+      },
+      "description": "Anything. Wildcard signal used by combinators (everything / anything / each)."
+    },
+    {
+      "name": "signal-unknown",
+      "mod": "core",
+      "subgroup": null,
+      "order": null,
+      "icon": "__core__/graphics/icons/unknown.png",
+      "icon_size": 64,
+      "image_size": [
+        64,
+        64
+      ],
+      "local_preview": "assets/factorio-data/core/graphics/icons/unknown.png",
+      "locale_en": "Unknown signal",
+      "locale_ru": "Неизвестный сигнал",
+      "sprite": "virtual-signal/signal-unknown",
+      "rich_text": "[virtual-signal=signal-unknown]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-unknown"
+      },
+      "description": "Unknown signal. Miscellaneous virtual signal (status / utility)."
+    },
+    {
+      "name": "signal-any-quality",
+      "mod": "quality",
+      "subgroup": "qualities",
+      "order": "z",
+      "icon": "__core__/graphics/icons/any-quality.png",
+      "icon_size": 64,
+      "image_size": [
+        64,
+        64
+      ],
+      "local_preview": "assets/factorio-data/core/graphics/icons/any-quality.png",
+      "locale_en": "Any quality",
+      "locale_ru": "Любое качество",
+      "sprite": "virtual-signal/signal-any-quality",
+      "rich_text": "[virtual-signal=signal-any-quality]",
+      "signal_id": {
+        "type": "virtual",
+        "name": "signal-any-quality"
+      },
+      "description": "Any quality. Quality-related signal."
+    }
+  ]
+}

@@ -109,7 +109,8 @@ Mirror notable notes in `changelog_RU.txt` when present.
   README.md
   README_RU.md
   LICENSE
-  thumbnail.png            # 144x144 recommended
+  thumbnail.png            # 144x144, framed via scripts/make_thumbnail.py
+  thumbnail_idea.md        # concept + art prompt (not packed)
   locale/en/config.cfg
   locale/ru/config.cfg
   migrations/              # if upgrading saves

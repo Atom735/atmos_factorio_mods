@@ -1,0 +1,16 @@
+# Atmos QoL Pack
+
+Модпак без собственного кода: в нём только зависимости, поэтому установка с Mod Portal скачивает и включает весь набор. Требует Space Age (quality, elevated rails, recycler).
+
+| Mod | Purpose |
+| --- | --- |
+| Atmos Auto Heal, Atmos Auto Fire, Atmos Enemy Range Visualizer, Atmos Shotgun Tiers, Atmos Faster Start | Atmos mods |
+| autobuild_fork, CursorEnhancements, FilterHelper, Fill4Me, Shortcuts-ick, squeak-through-2, VehicleSnap, pump | Building / handling QoL |
+| helmod, RateCalculator, BottleneckLite, Milestones | Planning and statistics |
+| gun-range-visualizer, bullet-trails, DiscoScience | Visuals |
+| hextorio, RPGsystem, more-achievements | Gameplay |
+| flib | Library |
+
+Несовместим с оригинальным `faster-start` (его заменяет Atmos Faster Start).
+
+Список зависимостей повторяет текущую игру автора; обновляйте его при изменении набора.

@@ -5,7 +5,7 @@ Factorio **2.1** mod that draws attack-range circles around **enemy** worms, tur
 ## Features
 
 - Toggle via shortcut bar or **Ctrl+Shift+R**
-- Settings panel: **Ctrl+Shift+E** (enable, style, category filters)
+- Settings panel: **Ctrl+Shift+E** or the worm button (gear badge) in the mod button bar (enable, style, lines, category filters)
 - Styles: **filled**, **outline**, **filled + outline**
 - Separate colors for worms / ammo / electric / fluid / artillery (Mod settings)
 - Multiplayer-friendly: each player sees only their own overlays

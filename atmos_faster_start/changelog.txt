@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-11-11
+  Features:
+    - Per-player virtual start points spent in a GUI; no items are given until the player chooses.
+    - Any item can be bought; prices are derived from the game's recipes and raw resources.
+    - The classic Faster Start pack is available as a one-time purchase.
+    - Admin commands /atmos-start-add-points and /atmos-start-reset-points; /atmos-start opens the window.

@@ -28,6 +28,13 @@ Monorepo for Factorio mod development (target: Factorio **2.1**).
 - Folder name may differ from portal `info.json` `name`; never rename `name` if it would break saves or the portal page.
 - Packaging scripts live in `scripts/`. Agent workflows live in `.cursor/skills/`.
 
+## Thumbnails
+
+- Every mod has `thumbnail_idea.md` (concept + image-generation prompt) and `thumbnail.png` (144×144).
+- Thumbnails always use the shared ATMOS frame `assets/thumbnail_frame.png`; never ship raw art without it.
+- Workflow: write/update the prompt in `thumbnail_idea.md` → generate square art (no text, no frame) → `py -3 scripts/make_thumbnail.py <art> <mod_folder>`.
+- New mods get `thumbnail_idea.md` and a framed thumbnail as part of the scaffold. `thumbnail_idea.md` is excluded from release zips.
+
 ## When editing mods
 
 - Follow the `factorio-2.1-modding` skill for prototypes, data lifecycle, and 2.1 API changes.

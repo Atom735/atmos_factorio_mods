@@ -1,4 +1,7 @@
+local mod_gui = require("mod-gui")
+
 local PANEL_NAME = "atmos-auto-heal-panel"
+local TOP_BUTTON_NAME = "atmos-auto-heal-top-button"
 local CHECK_NTH_TICK = 15
 local DEFAULT_COOLDOWN = 30
 
@@ -281,10 +284,34 @@ local function set_enabled(player, enabled)
   end
 end
 
+local function toggle_panel(player)
+  if player.gui.screen[PANEL_NAME] then
+    destroy_panel(player)
+  else
+    build_panel(player)
+  end
+end
+
+local function ensure_top_button(player)
+  local flow = mod_gui.get_button_flow(player)
+  local button = flow[TOP_BUTTON_NAME]
+  if not button then
+    button = flow.add({
+      type = "sprite-button",
+      name = TOP_BUTTON_NAME,
+      style = mod_gui.button_style,
+      tooltip = { "atmos-auto-heal.open-settings" },
+      tags = { aah = "panel-button" },
+    })
+  end
+  button.sprite = "virtual-signal/atmos-auto-heal-settings-button"
+end
+
 local function init_player(player)
   local state = player_state(player.index)
   sync_priority(state)
   player.set_shortcut_toggled("atmos-auto-heal-toggle", state.enabled)
+  ensure_top_button(player)
 end
 
 script.on_init(function()
@@ -344,11 +371,7 @@ script.on_event("atmos-auto-heal-panel", function(event)
   if not player then
     return
   end
-  if player.gui.screen[PANEL_NAME] then
-    destroy_panel(player)
-  else
-    build_panel(player)
-  end
+  toggle_panel(player)
 end)
 
 script.on_event(defines.events.on_gui_checked_state_changed, function(event)
@@ -395,5 +418,7 @@ script.on_event(defines.events.on_gui_click, function(event)
     build_panel(player)
   elseif tags.aah == "close" then
     destroy_panel(player)
+  elseif tags.aah == "panel-button" then
+    toggle_panel(player)
   end
 end)

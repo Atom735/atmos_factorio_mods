@@ -7,7 +7,7 @@ Factorio **2.1** mod that automatically eats fish, healing capsules, or any othe
 - Detects every capsule with a self-heal effect at runtime (vanilla fish and modded items)
 - Per-player priority list: reorder items and disable the ones you want to keep
 - Toggle via shortcut bar or **Ctrl+Shift+H**
-- Priority panel: **Ctrl+Shift+J**
+- Priority panel: **Ctrl+Shift+J** or the fish button (gear + heart badges) in the mod button bar
 - Respects each item's use cooldown
 - Optional "avoid wasting heals" mode: prefers items that fit the missing health
 

@@ -6,3 +6,15 @@ __pycache__/
 *.pyc
 .vs/
 .idea/
+
+# Local junction to Factorio scenario (not part of this repo)
+/RedMew/
+
+# Third-party mod (CC BY-NC-ND 4.0), local reference only
+/RPGsystem/
+
+# Third-party reference copy
+/faster-start/
+
+# Local junction to Factorio install data (icons, not redistributable)
+/assets/factorio-data/

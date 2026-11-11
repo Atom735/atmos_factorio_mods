@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2026-11-11
+  Graphics:
+    - New thumbnail in the shared Atmos frame.
+  Features:
+    - Auto fire works with any gun: pistol, submachine gun, rocket launcher, flamethrower, and modded weapons, not only shotguns.
+  Gui:
+    - Settings button moved into the shared mod button bar; icon is the shotgun with gear and damage badges.
+    - New Weapons column in the settings window: a checkbox per gun and All on / All off buttons.
+  Locale:
+    - Renamed auto-shotgun to auto fire.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.0
 Date: 2026-11-06
   Features:

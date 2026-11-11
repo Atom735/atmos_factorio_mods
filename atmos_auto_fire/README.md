@@ -1,12 +1,12 @@
 # Atmos Auto Fire
 
-Factorio 2.1 mod that automatically fires the shotgun in the player's hands.
+Factorio 2.1 mod that automatically fires the weapon in the player's hands: shotgun, pistol, SMG, rocket launcher, or any modded gun.
 
 The character itself pulls the trigger: the mod sets the character's shooting state at the chosen target, so spread, range, cooldown, ammo use, and research bonuses are exactly those of the held gun.
 
 ## Behavior
 
-- Active while the selected weapon name contains `shotgun` and the shortcut is on.
+- Active while the selected gun is checked in the **Weapons** column and the shortcut is on. All guns are on by default; **All on** / **All off** buttons switch every gun at once.
 - A target is picked every 5 ticks; the trigger is held every tick while that target stays valid and in range.
 - While a target is held, it overrides manual aiming. With no target, manual shooting works as usual.
 
@@ -43,7 +43,7 @@ The "Show debug overlay" checkbox draws ranges, candidates with their allow row,
 
 ## Controls
 
-- Top bar: shotgun button opens or closes the settings window.
+- Mod button bar (top-left): shotgun button with gear and damage badges opens or closes the settings window.
 - Shortcut bar: toggles auto-fire. Default key `CONTROL + ALT + G`.
 
 ## License

@@ -8,6 +8,8 @@
 | Atmos Enemy Range Visualizer | [atmos_enemy_range_visualizer](atmos_enemy_range_visualizer) |
 | Atmos Auto Heal | [atmos_auto_heal](atmos_auto_heal) |
 | Atmos Auto Fire | [atmos_auto_fire](atmos_auto_fire) |
+| Atmos Faster Start | [atmos_faster_start](atmos_faster_start) |
+| Atmos QoL Pack (модпак) | [atmos_qol_pack](atmos_qol_pack) |
 
 Имя мода в игре / на портале задаётся в `info.json` каждого мода (после публикации не переименовывать).
 
@@ -16,6 +18,18 @@ English overview: [README.md](README.md)
 ## Рекомендуемый компаньон
 
 Для кругов дальности своего оружия/техники — **[Gun Range Visualizer](https://mods.factorio.com/mod/gun-range-visualizer)** (рекомендуется модом Atmos Enemy Range Visualizer).
+
+## Иконки модов
+
+У каждого мода есть `thumbnail_idea.md` (концепция и промпт) и `thumbnail.png` в рамке `assets/thumbnail_frame.png`:
+
+```powershell
+py -3 scripts/make_thumbnail.py <картинка> <папка_мода>
+```
+
+## Индекс сигнальных иконок
+
+`assets/signals/` содержит индекс виртуальных сигналов Factorio (имена, локали, sprite-пути) для использования в модах. Пересборка: `py -3 scripts/index_signals.py`; сами иконки остаются в папке игры (junction `assets/factorio-data` в gitignore).
 
 ## Упаковка
 

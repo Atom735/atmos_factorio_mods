@@ -1,6 +1,8 @@
 local util = require("util")
+local mod_gui = require("mod-gui")
 
 local PANEL_NAME = "atmos-enemy-range-panel"
+local TOP_BUTTON_NAME = "atmos-enemy-range-top-button"
 local UPDATE_NTH_TICK = 20
 local MOVE_EPS2 = 0.25 -- squared tiles; skip rescans for tiny movement
 
@@ -563,6 +565,21 @@ local function toggle_panel(player)
   end
 end
 
+local function ensure_top_button(player)
+  local flow = mod_gui.get_button_flow(player)
+  local button = flow[TOP_BUTTON_NAME]
+  if not button then
+    button = flow.add({
+      type = "sprite-button",
+      name = TOP_BUTTON_NAME,
+      style = mod_gui.button_style,
+      tooltip = { "atmos-enemy-range.open-settings" },
+      tags = { aerv = "panel-button" },
+    })
+  end
+  button.sprite = "virtual-signal/atmos-enemy-range-settings-button"
+end
+
 local function restyle_player(player)
   local state = player_state(player.index)
   invalidate_visuals(player, state)
@@ -573,6 +590,9 @@ end
 
 script.on_init(function()
   storage.players = {}
+  for _, player in pairs(game.players) do
+    ensure_top_button(player)
+  end
 end)
 
 script.on_load(function()
@@ -588,6 +608,7 @@ script.on_configuration_changed(function()
     state.enemy_forces = nil
     state.render_cache = nil
     player.set_shortcut_toggled("atmos-enemy-range-toggle", state.enabled)
+    ensure_top_button(player)
     if state.enabled then
       refresh_player(player, true)
     else
@@ -667,7 +688,9 @@ script.on_event(defines.events.on_gui_click, function(event)
   if not player then
     return
   end
-  if element.tags.aerv == "close" then
+  if element.tags.aerv == "panel-button" then
+    toggle_panel(player)
+  elseif element.tags.aerv == "close" then
     destroy_panel(player)
   elseif element.tags.aerv == "refresh" then
     local state = player_state(player.index)
@@ -739,6 +762,7 @@ script.on_event(defines.events.on_player_joined_game, function(event)
   local state = player_state(player.index)
   state.enemy_forces = nil
   player.set_shortcut_toggled("atmos-enemy-range-toggle", state.enabled)
+  ensure_top_button(player)
   if state.enabled then
     refresh_player(player, true)
     sync_tick_handler()

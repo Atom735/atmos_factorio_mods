@@ -28,6 +28,7 @@ EXCLUDE_FILE_NAMES = {
 }
 EXCLUDE_FILE_REGEXES = [
     re.compile(r"^README.*\.md$", re.IGNORECASE),
+    re.compile(r"^thumbnail_idea\.md$", re.IGNORECASE),
     re.compile(r"^changelog_RU\.txt$", re.IGNORECASE),
     re.compile(r"^\.gitignore$"),
     re.compile(r"^\.gitattributes$"),
