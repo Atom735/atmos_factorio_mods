@@ -1,0 +1,12 @@
+{
+  "name": "Atmos-Factory-Roadmap",
+  "version": "1.0.0",
+  "title": "Atmos Factory Roadmap",
+  "author": "Atom735",
+  "contact": "",
+  "homepage": "https://github.com/Atom735/atmos_factorio_mods/tree/main/atmos_factory_roadmap",
+  "description": "Interactive progression guide: detects your current game stage from built machines, research and production, and tells you what to build next with golden ratios. GUI only, no new prototypes or recipes.",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.0"],
+  "license": "MIT"
+}

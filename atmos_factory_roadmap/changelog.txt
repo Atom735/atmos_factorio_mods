@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-11-12
+  Features:
+    - Progression guide window with 12 stages from the starter kit to the rocket launch.
+    - Current stage is detected automatically from built entities, researched technologies and produced items.
+    - Goal checklist with progress bars, stage tips and golden ratios.
+    - Chat notification when the force completes a stage.
+    - Окно гида по развитию с 12 этапами от стартового комплекта до запуска ракеты.
+    - Текущий этап определяется автоматически по построенным объектам, изученным технологиям и произведённым предметам.
+    - Список целей с прогресс-барами, подсказками и золотыми соотношениями.
+    - Сообщение в чат, когда команда проходит этап.
