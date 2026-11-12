@@ -45,7 +45,7 @@ Place Lua or JSON migrations under `migrations/`. Use when renaming prototypes o
 | --- | --- | --- |
 | `info.json` description | Yes (in-game browser) | Yes |
 | `changelog.txt` | Yes (strict format in-game) | Yes |
-| `changelog_RU.txt` | No | Yes (RU readers) |
+| `changelog_EN.txt` / `changelog_RU.txt` | No (sources) | Yes |
 | `README.md` | No | Yes |
 | `README_RU.md` | No | Yes |
 | `thumbnail.png` | Yes | Yes |

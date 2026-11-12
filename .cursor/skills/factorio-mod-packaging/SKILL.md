@@ -13,7 +13,7 @@ description: >-
 - Zip file name: `{info.name}_{info.version}.zip` (example: `Atmos-Shotgun-Tiers_2.1.0.zip`)
 - Inside the zip: one root folder `{info.name}_{info.version}/` containing mod files (`info.json` at that folder root)
 - Prefer including: Lua sources, `info.json`, `changelog.txt`, `locale/`, `migrations/`, graphics, `thumbnail.png`, `LICENSE`
-- Exclude: `.git*`, `.cursor/`, `dist/`, other zips, `README*.md`, `changelog_RU.txt`, editor junk
+- Exclude: `.git*`, `.cursor/`, `dist/`, other zips, `README*.md`, `changelog_EN.txt`, `changelog_RU.txt` (`changelog.txt` is regenerated from them before packing), editor junk
 
 Official structure: https://lua-api.factorio.com/latest/auxiliary/mod-structure.html
 

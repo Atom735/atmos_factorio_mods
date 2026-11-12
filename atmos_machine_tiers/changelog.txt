@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-11-12
+  Features:
+    - Upgrade tiers for assembling machines, furnaces, mining drills and pumpjacks, offshore pumps and (optionally) labs, including Space Age and modded machines.
+    - Craft 5 machines of the previous tier into 1 of the next; tier recipes unlock together with the base machine.
+    - Each tier adds speed, a module slot and energy use (and pollution); all values are configurable.
+    - Original machine graphics with a tier digit or master star badge in the top-right corner.
+    - Тиры для сборочных автоматов, печей, буров и нефтекачалок, морских насосов и (опционально) лабораторий, включая машины Space Age и модов.
+    - 5 машин предыдущего тира крафтятся в 1 следующего; рецепты тиров открываются вместе с базовой машиной.
+    - Каждый тир добавляет скорость, слот модуля и потребление энергии (и загрязнение); все значения настраиваются.
+    - Оригинальная графика машин со значком тира (цифра или звезда мастер-тира) в правом верхнем углу.

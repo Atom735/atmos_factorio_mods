@@ -3,13 +3,16 @@ Version: 2.1.2
 Date: 2026-11-11
   Graphics:
     - New thumbnail in the shared Atmos frame.
+    - Новая иконка мода в общей рамке Atmos.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 2026-11-05
   Features:
     - Shotgun and piercing shotgun shells gain extra pellets each tier (configurable integer, default +1 per tier step).
+    - Обычные и бронебойные дробовые патроны получают дополнительные дробинки каждый тир (настраиваемое целое, по умолчанию +1 за шаг тира).
   Changes:
     - New startup setting: Extra shotgun pellets per tier.
+    - Новая startup-настройка: доп. дробинки за тир.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.0
 Date: 2026-11-05
@@ -19,13 +22,22 @@ Date: 2026-11-05
     - Startup settings for weapon damage, range, attack speed, and ammo damage bonuses.
     - Tier recipes enabled from the start with 0.01s craft time.
     - Projectile-based ammo (shotgun shells, rockets) gets tiered projectiles with scaled damage.
+    - Переименование в Atmos Shotgun Tiers.
+    - Пять уровней улучшения для выбранного оружия и патронов (5 предыдущих → 1 следующий).
+    - Startup-настройки бонусов урона/дальности/скорости оружия и урона патронов.
+    - Рецепты тиров доступны с начала, время крафта 0.01с.
+    - Для снарядных патронов (дробь, ракеты) создаются тировые снаряды с масштабированным уроном.
   Compatibility:
     - Factorio 2.1 / Space Age (optional quality).
     - Recipe categories use Factorio 2.1 `categories` field.
+    - Factorio 2.1 / Space Age (опционально quality).
+    - Категории рецептов через поле Factorio 2.1 `categories`.
   Locale:
     - Russian and English.
+    - Русский и английский.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 2026-11-05
   Features:
     - Initial release prototype with multi-tier guns and ammo.
+    - Начальный прототип с многоуровневым оружием и патронами.

@@ -6,3 +6,7 @@ Date: 2026-11-11
     - Any item can be bought; prices are derived from the game's recipes and raw resources.
     - The classic Faster Start pack is available as a one-time purchase.
     - Admin commands /atmos-start-add-points and /atmos-start-reset-points; /atmos-start opens the window.
+    - Виртуальные стартовые очки у каждого игрока, тратятся в окне; предметы не выдаются, пока игрок не выберет.
+    - Купить можно любой предмет; цены считаются по рецептам игры и сырью.
+    - Классический набор Faster Start доступен как разовая покупка.
+    - Команды админа /atmos-start-add-points и /atmos-start-reset-points; /atmos-start открывает окно.

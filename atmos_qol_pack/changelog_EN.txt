@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-11-11
+  Features:
+    - Initial modpack: Atmos mods plus the QoL mods used in the author's game.

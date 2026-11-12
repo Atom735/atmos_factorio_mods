@@ -9,11 +9,13 @@ Monorepo for Factorio mod development (target: Factorio **2.1**).
 
 ## Language
 
-- Default language for code, comments, commits, `info.json`, `README.md`, and `changelog.txt` is **English**.
-- Russian docs use the `_RU` suffix:
-  - `README_RU.md`
-  - `changelog_RU.txt`
-- Keep EN and `_RU` docs in sync when behavior or version notes change.
+- Default language for code, comments, commits and `info.json` is **English**.
+- Docs are written per language in separate source files; the combined files are **generated**:
+  - Sources: `README_EN.md` + `README_RU.md`, `changelog_EN.txt` + `changelog_RU.txt`.
+  - Outputs: `README.md` (EN part, `---`, RU part) and `changelog.txt` (per version and category: EN entries, then RU entries; RU categories match EN by name or by position).
+  - Never edit `README.md` / `changelog.txt` by hand; edit the `_EN` / `_RU` sources and run `py -3 scripts/build_docs.py [mod]` (`--check` verifies they are up to date). `pack_mod.py` rebuilds them automatically.
+  - `_RU` changelog must have the same versions and category order as `_EN`.
+- Keep EN and `_RU` sources in sync when behavior or version notes change.
 - Chat with the user may be in Russian; authored project files stay EN unless `_RU`.
 
 ## Locales

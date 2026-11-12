@@ -10,6 +10,9 @@ import sys
 import zipfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build_docs  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 EXCLUDE_DIR_NAMES = {
@@ -29,7 +32,7 @@ EXCLUDE_FILE_NAMES = {
 EXCLUDE_FILE_REGEXES = [
     re.compile(r"^README.*\.md$", re.IGNORECASE),
     re.compile(r"^thumbnail_idea\.md$", re.IGNORECASE),
-    re.compile(r"^changelog_RU\.txt$", re.IGNORECASE),
+    re.compile(r"^changelog_(EN|RU)\.txt$", re.IGNORECASE),
     re.compile(r"^\.gitignore$"),
     re.compile(r"^\.gitattributes$"),
     re.compile(r".*\.zip$", re.IGNORECASE),
@@ -67,6 +70,7 @@ def load_info(mod_path: Path) -> dict:
 
 def pack_mod(mod_path: Path, out_dir: Path) -> Path:
     mod_path = mod_path.resolve()
+    build_docs.build_mod(mod_path, check=False)
     info = load_info(mod_path)
     package_id = f"{info['name']}_{info['version']}"
     out_dir.mkdir(parents=True, exist_ok=True)

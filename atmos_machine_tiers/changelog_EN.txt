@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-11-12
+  Features:
+    - Upgrade tiers for assembling machines, furnaces, mining drills and pumpjacks, offshore pumps and (optionally) labs, including Space Age and modded machines.
+    - Craft 5 machines of the previous tier into 1 of the next; tier recipes unlock together with the base machine.
+    - Each tier adds speed, a module slot and energy use (and pollution); all values are configurable.
+    - Original machine graphics with a tier digit or master star badge in the top-right corner.

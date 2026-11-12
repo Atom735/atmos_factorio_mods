@@ -36,7 +36,7 @@ $ExcludeFileNames = @(
 )
 $ExcludeFileRegex = @(
   '^README.*\.md$',
-  '^changelog_RU\.txt$',
+  '^changelog_(EN|RU)\.txt$',
   '^\.gitignore$',
   '^\.gitattributes$',
   '.*\.zip$',

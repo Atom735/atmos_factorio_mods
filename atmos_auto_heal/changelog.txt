@@ -3,8 +3,10 @@ Version: 1.1.0
 Date: 2026-11-11
   Graphics:
     - New thumbnail in the shared Atmos frame.
+    - Новая иконка мода в общей рамке Atmos.
   Gui:
     - Top-bar button opens the settings panel; its icon is the fish with gear and heart badges.
+    - Кнопка в верхней панели открывает окно настроек; иконка — рыба с шестерёнкой и сердцем.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-11-06
@@ -13,8 +15,15 @@ Date: 2026-11-06
     - Per-player priority list with up/down ordering and per-item allow toggles.
     - Shortcut bar toggle (CONTROL + SHIFT + H) and priority panel (CONTROL + SHIFT + J).
     - Respects each item's use cooldown and can avoid wasting large heals.
+    - Автоматически использует рыбу, лечебные капсулы и любые модовые капсулы самолечения, когда здоровье падает ниже порога.
+    - Индивидуальный список приоритетов с перемещением вверх/вниз и разрешением для каждого предмета.
+    - Переключатель на панели шорткатов (CONTROL + SHIFT + H) и панель приоритетов (CONTROL + SHIFT + J).
+    - Учитывает кулдаун использования предмета и может не тратить крупное лечение впустую.
   Compatibility:
     - Factorio 2.1.
     - Incompatible with Auto Fish and Heal (auto-fish).
+    - Factorio 2.1.
+    - Несовместим с Auto Fish and Heal (auto-fish).
   Locale:
     - English and Russian.
+    - Английский и русский.

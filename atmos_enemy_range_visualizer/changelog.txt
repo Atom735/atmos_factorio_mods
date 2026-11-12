@@ -3,20 +3,26 @@ Version: 1.1.0
 Date: 2026-11-11
   Graphics:
     - New thumbnail in the shared Atmos frame.
+    - Новая иконка мода в общей рамке Atmos.
   Gui:
     - Top-bar button opens the settings panel; its icon is the mod icon with a gear badge.
+    - Кнопка в верхней панели открывает окно настроек; иконка — значок мода с шестерёнкой.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2026-11-06
   Features:
     - Optional lines from the character to enemy turrets and worms, in the category color.
     - New per-player settings: show lines, line opacity, line width. Panel checkbox toggles lines per session.
+    - Опциональные линии от персонажа к вражеским турелям и червям цветом категории.
+    - Новые настройки игрока: показ линий, непрозрачность и толщина линий. Чекбокс в панели переключает линии в сессии.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2026-11-06
   Bugfixes:
     - Fixed crash "LuaEntityPrototype doesn't contain key automatic_range" near enemy artillery turrets.
     - Artillery range is now read from the turret's gun; prototype reads can no longer crash the game.
+    - Исправлен краш "LuaEntityPrototype doesn't contain key automatic_range" рядом с вражеской артиллерией.
+    - Дальность артиллерии теперь берётся из её орудия; чтение прототипов больше не может уронить игру.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-11-05
@@ -24,6 +30,9 @@ Date: 2026-11-05
     - Cache colors, styles, entity types, enemy forces, and prototype ranges.
     - Skip full rescans when the player barely moved; only create/destroy changed overlays.
     - Tick handler stays inactive while visualization is off.
+    - Кэш цветов, стилей, типов сущностей, вражеских сил и дальностей прототипов.
+    - Пропуск полного рескана при малом сдвиге игрока; создание/удаление только изменённых оверлеев.
+    - Обработчик тиков неактивен, пока визуализация выключена.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-11-05
@@ -32,8 +41,15 @@ Date: 2026-11-05
     - Per-type colors and three styles: filled, outline, filled + outline.
     - Shortcut bar toggle and keybind (CONTROL + SHIFT + R).
     - In-game settings panel (CONTROL + SHIFT + E) for enable, style, and category filters.
+    - Круги дальности атаки для вражеских червей, стрелковых/электро/жидкостных турелей и артиллерии.
+    - Цвета по типам и три стиля: заливка, контур, заливка + контур.
+    - Переключатель на панели шорткатов и хоткей (CONTROL + SHIFT + R).
+    - Игровая панель настроек (CONTROL + SHIFT + E): вкл/выкл, стиль и фильтры категорий.
   Compatibility:
     - Factorio 2.1.
     - Recommends gun-range-visualizer as a companion mod.
+    - Factorio 2.1.
+    - Рекомендует gun-range-visualizer как мод-компаньон.
   Locale:
     - English and Russian.
+    - Английский и русский.

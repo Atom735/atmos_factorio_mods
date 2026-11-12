@@ -1,0 +1,12 @@
+{
+  "name": "Atmos-Machine-Tiers",
+  "version": "1.0.0",
+  "title": "Atmos Machine Tiers",
+  "author": "Atom735",
+  "contact": "",
+  "homepage": "https://github.com/Atom735/atmos_factorio_mods/tree/main/atmos_machine_tiers",
+  "description": "Adds upgrade tiers for assemblers, chemical plants, refineries, furnaces, mining drills, pumpjacks, offshore pumps and other production machines: craft 5 of the previous tier into 1 of the next. Each tier adds speed, a module slot and energy use. Original graphics with a tier badge. Many settings.",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.0", "? quality", "? space-age"],
+  "license": "MIT"
+}
