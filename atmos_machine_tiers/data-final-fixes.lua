@@ -187,7 +187,10 @@ local function make_entity(base, spec, tier, item_name)
     scale_emissions(proto.energy_source, energy_factor)
   end
 
-  if MODULE_STEP > 0 and not spec.no_modules then
+  -- An explicit empty allowed_effects forbids modules; slots there fail prototype setup.
+  local effects = proto.allowed_effects
+  local effects_allowed = type(effects) ~= "table" or next(effects) ~= nil
+  if MODULE_STEP > 0 and not spec.no_modules and effects_allowed then
     proto.module_slots = (proto.module_slots or 0) + MODULE_STEP * (tier - 1)
   end
   return proto
