@@ -4,7 +4,7 @@ Modpack with no code of its own: it only lists dependencies, so installing it fr
 
 | Mod | Purpose |
 | --- | --- |
-| Atmos Auto Heal, Atmos Auto Fire, Atmos Enemy Range Visualizer, Atmos Shotgun Tiers, Atmos Faster Start | Atmos mods |
+| Atmos Auto Heal, Atmos Auto Fire, Atmos Enemy Range Visualizer, Atmos Shotgun Tiers, Atmos Machine Tiers, Atmos Faster Start | Atmos mods |
 | autobuild_fork, CursorEnhancements, FilterHelper, Fill4Me, Shortcuts-ick, squeak-through-2, VehicleSnap, pump | Building / handling QoL |
 | helmod, RateCalculator, BottleneckLite, Milestones | Planning and statistics |
 | gun-range-visualizer, bullet-trails, DiscoScience | Visuals |
