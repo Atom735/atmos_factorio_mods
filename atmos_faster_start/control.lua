@@ -275,6 +275,57 @@ local function refresh_costs()
   storage.costs = compute_costs()
 end
 
+local function item_quality(entry)
+  local quality = entry.quality
+  if type(quality) == "table" then
+    quality = quality.name
+  end
+  if not quality or quality == "" then
+    return "normal"
+  end
+  return quality
+end
+
+local function main_inventory_count(player, name, quality)
+  local inv = player.get_main_inventory()
+  if not inv then
+    return 0
+  end
+  quality = quality or "normal"
+  local ok, count = pcall(function()
+    return inv.get_item_count({ name = name, quality = quality })
+  end)
+  if ok then
+    return count
+  end
+  return inv.get_item_count(name)
+end
+
+local function blueprint_items_cost(items)
+  local total = 0
+  for _, entry in pairs(items or {}) do
+    if entry.count > 0 and item_is_buyable(entry.name) then
+      total = total + price(entry.name, entry.count)
+    end
+  end
+  return total
+end
+
+local function blueprint_missing_items(player, items)
+  local missing = {}
+  for _, entry in pairs(items or {}) do
+    if entry.count > 0 and item_is_buyable(entry.name) then
+      local quality = item_quality(entry)
+      local have = main_inventory_count(player, entry.name, quality)
+      local need = entry.count - have
+      if need > 0 then
+        missing[#missing + 1] = { name = entry.name, count = need, quality = quality }
+      end
+    end
+  end
+  return missing
+end
+
 -- GUI -----------------------------------------------------------------------
 
 local function get_frame(player)
@@ -341,6 +392,33 @@ local function update_frame(player)
     buy.enabled = false
   end
 
+  local bp_flow = body.bp_flow
+  if bp_flow then
+    local buttons = bp_flow.buy_buttons
+    local items = state.bp_items
+    if items and #items > 0 then
+      local label = state.bp_label
+      if label and label ~= "" then
+        bp_flow.status.caption = { "atmos-faster-start.bp-status-named", label, #items }
+      else
+        bp_flow.status.caption = { "atmos-faster-start.bp-status", #items }
+      end
+      local full_cost = blueprint_items_cost(items)
+      local missing = blueprint_missing_items(player, items)
+      local missing_cost = blueprint_items_cost(missing)
+      buttons.buy_full.caption = { "atmos-faster-start.bp-buy-full", full_cost }
+      buttons.buy_full.enabled = full_cost > 0 and full_cost <= state.points
+      buttons.buy_missing.caption = { "atmos-faster-start.bp-buy-missing", missing_cost }
+      buttons.buy_missing.enabled = missing_cost > 0 and missing_cost <= state.points
+    else
+      bp_flow.status.caption = { "atmos-faster-start.bp-status-empty" }
+      buttons.buy_full.caption = { "atmos-faster-start.bp-buy-full", "-" }
+      buttons.buy_full.enabled = false
+      buttons.buy_missing.caption = { "atmos-faster-start.bp-buy-missing", "-" }
+      buttons.buy_missing.enabled = false
+    end
+  end
+
   update_top_button(player)
 end
 
@@ -399,6 +477,36 @@ local function open_frame(player)
   buy_flow.add({ type = "label", name = "cost" })
   buy_flow.add({ type = "button", name = "buy", caption = { "atmos-faster-start.buy" }, style = "confirm_button", tags = { afs = "buy" } })
 
+  body.add({ type = "line" })
+  body.add({ type = "label", caption = { "atmos-faster-start.bp-label" } })
+
+  local bp_flow = body.add({ type = "flow", name = "bp_flow", direction = "vertical" })
+  local bp_load = bp_flow.add({ type = "flow", name = "load_flow", direction = "horizontal" })
+  bp_load.style.vertical_align = "center"
+  bp_load.add({
+    type = "button",
+    name = "load",
+    caption = { "atmos-faster-start.bp-load" },
+    tooltip = { "atmos-faster-start.bp-load-tooltip" },
+    tags = { afs = "bp-load" },
+  })
+  bp_flow.add({ type = "label", name = "status" })
+  local bp_buy = bp_flow.add({ type = "flow", name = "buy_buttons", direction = "horizontal" })
+  bp_buy.add({
+    type = "button",
+    name = "buy_full",
+    style = "confirm_button",
+    tooltip = { "atmos-faster-start.bp-buy-full-tooltip" },
+    tags = { afs = "bp-buy-full" },
+  })
+  bp_buy.add({
+    type = "button",
+    name = "buy_missing",
+    style = "confirm_button",
+    tooltip = { "atmos-faster-start.bp-buy-missing-tooltip" },
+    tags = { afs = "bp-buy-missing" },
+  })
+
   update_frame(player)
   player.opened = frame
 end
@@ -420,15 +528,142 @@ local function require_character(player)
   return false
 end
 
-local function give_or_spill(player, name, count)
-  local inserted = player.insert({ name = name, count = count })
+local function give_or_spill(player, name, count, quality)
+  local stack = { name = name, count = count }
+  if quality and quality ~= "" and quality ~= "normal" then
+    stack.quality = quality
+  end
+  local inserted = player.insert(stack)
   if inserted < count then
+    local spill = { name = name, count = count - inserted }
+    if stack.quality then
+      spill.quality = stack.quality
+    end
     player.surface.spill_item_stack({
       position = player.position,
-      stack = { name = name, count = count - inserted },
+      stack = spill,
       enable_looted = true,
       allow_belts = false,
     })
+  end
+end
+
+local function copy_cost_to_build(source)
+  local costs = safe_get(source, "cost_to_build")
+  if type(costs) ~= "table" then
+    return nil
+  end
+  local items = {}
+  for _, entry in pairs(costs) do
+    local name = entry.name
+    local count = entry.count or 0
+    if name and count > 0 and item_is_buyable(name) then
+      items[#items + 1] = {
+        name = name,
+        count = count,
+        quality = item_quality(entry),
+      }
+    end
+  end
+  return items
+end
+
+local function resolve_blueprint_stack(stack)
+  if not (stack and stack.valid_for_read) then
+    return nil
+  end
+  local guard = 0
+  while stack.is_blueprint_book do
+    guard = guard + 1
+    if guard > 20 then
+      return nil
+    end
+    local inv = stack.get_inventory(defines.inventory.item_main)
+    local index = stack.active_index
+    if not (inv and index and inv[index] and inv[index].valid_for_read) then
+      return nil
+    end
+    stack = inv[index]
+  end
+  if stack.is_blueprint and stack.is_blueprint_setup() then
+    return stack
+  end
+  return nil
+end
+
+local function resolve_blueprint_record(record, player)
+  if not (record and record.valid) then
+    return nil
+  end
+  local guard = 0
+  while record.type == "blueprint-book" do
+    guard = guard + 1
+    if guard > 20 then
+      return nil
+    end
+    record = record.get_selected_record(player)
+    if not (record and record.valid) then
+      return nil
+    end
+  end
+  if record.type == "blueprint" and record.is_blueprint_setup() then
+    return record
+  end
+  return nil
+end
+
+local function resolve_cursor_blueprint(player)
+  local stack = resolve_blueprint_stack(player.cursor_stack)
+  if stack then
+    return stack
+  end
+  return resolve_blueprint_record(player.cursor_record, player)
+end
+
+local function load_blueprint(player)
+  local state = player_state(player.index)
+  local source = resolve_cursor_blueprint(player)
+  if not source then
+    state.bp_items = nil
+    state.bp_label = nil
+    player.print({ "atmos-faster-start.bp-no-blueprint" })
+    return
+  end
+  local items = copy_cost_to_build(source)
+  if not items or #items == 0 then
+    state.bp_items = nil
+    state.bp_label = nil
+    player.print({ "atmos-faster-start.bp-empty" })
+    return
+  end
+  state.bp_items = items
+  state.bp_label = safe_get(source, "label")
+  player.print({ "atmos-faster-start.bp-loaded", #items })
+end
+
+local function buy_blueprint(player, missing_only)
+  local state = player_state(player.index)
+  local items = state.bp_items
+  if not items or #items == 0 or not require_character(player) then
+    return
+  end
+  local to_buy = missing_only and blueprint_missing_items(player, items) or items
+  if #to_buy == 0 then
+    player.print({ "atmos-faster-start.bp-nothing-missing" })
+    return
+  end
+  local cost = blueprint_items_cost(to_buy)
+  if cost <= 0 or cost > state.points then
+    return
+  end
+  state.points = state.points - cost
+  for _, entry in pairs(to_buy) do
+    give_or_spill(player, entry.name, entry.count, item_quality(entry))
+  end
+  if missing_only then
+    player.print({ "atmos-faster-start.bp-bought-missing", cost, state.points })
+  else
+    player.print({ "atmos-faster-start.bp-bought-full", cost, state.points })
   end
 end
 
@@ -532,7 +767,12 @@ script.on_configuration_changed(function()
   refresh_costs()
   for _, player in pairs(game.players) do
     init_player(player)
-    update_frame(player)
+    if get_frame(player) then
+      close_frame(player)
+      open_frame(player)
+    else
+      update_top_button(player)
+    end
   end
 end)
 
@@ -581,6 +821,15 @@ script.on_event(defines.events.on_gui_click, function(event)
   elseif action == "buy" then
     buy_item(player)
     update_frame(player)
+  elseif action == "bp-load" then
+    load_blueprint(player)
+    update_frame(player)
+  elseif action == "bp-buy-full" then
+    buy_blueprint(player, false)
+    update_frame(player)
+  elseif action == "bp-buy-missing" then
+    buy_blueprint(player, true)
+    update_frame(player)
   elseif action == "stack" then
     local frame = get_frame(player)
     local name = frame and frame.body.buy_flow.item.elem_value
@@ -590,6 +839,13 @@ script.on_event(defines.events.on_gui_click, function(event)
       player_state(player.index).count = count
       update_frame(player)
     end
+  end
+end)
+
+script.on_event(defines.events.on_player_main_inventory_changed, function(event)
+  local player = game.get_player(event.player_index)
+  if player and get_frame(player) then
+    update_frame(player)
   end
 end)
 

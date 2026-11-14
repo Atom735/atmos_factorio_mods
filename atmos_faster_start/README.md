@@ -4,6 +4,7 @@ Every player gets **virtual start points** (not items) and spends them in a GUI:
 
 - **Default pack** - the classic [Faster Start](https://mods.factorio.com/mod/faster-start) kit, one time per player.
 - **Any item** - pick it with the item selector, set the amount, buy. Prices are computed at runtime from the game's recipes and raw resources (ore, wood, fish, crude oil, water...). Recycling recipes are ignored, catalyst loops are reduced to net inputs/outputs.
+- **Blueprint** - hold a blueprint (or book page), load it from the cursor, then buy the full build set or only items missing from your main inventory.
 
 The mod does **not** add or change recipes or other prototypes.
 
@@ -34,6 +35,7 @@ Based on [Faster Start](https://mods.factorio.com/mod/faster-start) by trad_emar
 
 - **Стандартный набор** - классический набор [Faster Start](https://mods.factorio.com/mod/faster-start), один раз на игрока.
 - **Любой предмет** - выберите его в селекторе, укажите количество, купите. Цены считаются в рантайме по рецептам игры и сырью (руда, дерево, рыба, нефть, вода...). Рецепты переработки игнорируются, циклы с катализатором сводятся к чистым входам/выходам.
+- **Блюпринт** - возьмите блюпринт (или страницу книги), загрузите с курсора, затем купите весь набор или только то, чего нет в основном инвентаре.
 
 Мод **не** добавляет и не меняет рецепты и другие прототипы.
 

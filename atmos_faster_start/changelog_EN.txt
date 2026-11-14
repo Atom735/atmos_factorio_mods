@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-11-14
+  Features:
+    - Load a blueprint from the cursor and buy its build cost in start points: full set or only items missing from the main inventory.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-11-12
   Changes:

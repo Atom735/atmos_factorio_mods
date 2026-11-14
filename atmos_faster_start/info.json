@@ -1,11 +1,11 @@
 {
   "name": "Atmos-Faster-Start",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "title": "Atmos Faster Start",
   "author": "Atom735",
   "contact": "",
   "homepage": "https://github.com/Atom735/atmos_factorio_mods/tree/main/atmos_faster_start",
-  "description": "Every player gets virtual start points to spend in a GUI on any item, priced from the game's own recipes, or on the classic Faster Start pack. Does not add or change recipes. Based on Faster Start by trad_emark.",
+  "description": "Every player gets virtual start points to spend in a GUI on any item, priced from the game's own recipes, the classic Faster Start pack, or a loaded blueprint (full set or only missing items). Does not add or change recipes. Based on Faster Start by trad_emark.",
   "factorio_version": "2.1",
   "dependencies": ["base >= 2.1.0", "! faster-start"],
   "license": "MIT"
